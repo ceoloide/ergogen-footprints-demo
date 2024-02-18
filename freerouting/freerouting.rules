@@ -1,4 +1,4 @@
-(rules PCB corney_island
+(rules PCB ergogen_footprints_demo
   (snap_angle 
     fortyfive_degree
   )

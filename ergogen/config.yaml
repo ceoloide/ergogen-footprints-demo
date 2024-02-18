@@ -1,0 +1,14 @@
+meta:
+  engine: 4.0.5
+  name: ergogen-footprints-demo
+  version: 0.1
+  ref: &kb_ref "Ergogen Footprints Demo v0.1 (by ceoloide)"
+  url: &kb_url "https://github.com/ceoloide/ergogen-footprints"
+units:
+
+points:
+  zones:
+
+outlines:
+
+pcbs:
