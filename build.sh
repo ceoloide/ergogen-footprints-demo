@@ -5,8 +5,8 @@ container_cmd=docker
 container_args="-w /board -v $(pwd):/board --rm"
 
 # Define the boards to autoroute and export, and the plates
-boards="corney_island_wireless corney_island"
-plates="backplate frontplate controller_overlay"
+boards="ergogen_footprints_demo"
+plates=""
 
 # Define the KiCad Auto Docker image to use
 kicad_auto_image="setsoft/kicad_auto:ki7"
@@ -54,9 +54,6 @@ done
 for board in ${boards}
 do
     echo "\n\n>>>>>> Processing $board <<<<<<\n\n"
-    if [ -e ergogen/output/pcbs/${board}_manually_routed.kicad_pcb ]; then
-        ${container_cmd} run ${container_args} ${kicad_auto_image} kibot -b ergogen/output/pcbs/${board}_manually_routed.kicad_pcb -c kibot/boards.kibot.yaml
-    fi
     if [ -e ergogen/output/pcbs/${board}.kicad_pcb ]; then
         echo Export DSN 
         ${container_cmd} run ${container_args} ${kicad_auto_image} kibot/export_dsn.py -b ergogen/output/pcbs/${board}.kicad_pcb -o ergogen/output/pcbs/${board}.dsn    

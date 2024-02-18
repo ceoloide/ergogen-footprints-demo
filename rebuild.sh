@@ -5,7 +5,7 @@ container_cmd=docker
 container_args="-w /board -v $(pwd):/board --rm"
 
 # Define the boards to autoroute and export, and the plates
-boards="corney_island_wireless"
+boards="ergogen_footprints_demo"
 # kicad_auto_image="ghcr.io/inti-cmnb/kicad7_auto:latest"
 kicad_auto_image="setsoft/kicad_auto:ki7"
 # freerouting_cli_image="ceoloide/kicad_auto:nightly"
