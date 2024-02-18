@@ -4,11 +4,245 @@ meta:
   version: 0.1
   ref: &kb_ref "Ergogen Footprints Demo v0.1 (by ceoloide)"
   url: &kb_url "https://github.com/ceoloide/ergogen-footprints"
-units:
-
+units:  
+  # Physical measures
+  screw_radius: 1.1 # M2 screws
+  screw_diameter: screw_radius * 2
+  spacer_radius: 2.15 # M2 standoffs
+  spacer_diameter: spacer_radius * 2
+  fillet_radius: 0.5
 points:
   zones:
+    board_center:
+      anchor:
+        shift: [75, -75] # Fix KiCad placement
+      key:
+        tags:
+          - helper
+    choc_v1_v2:
+      key:
+        padding: 20
+        spread: 20
+        tags:
+          - key
+      anchor:
+        - ref: board_center
+          shift: [-40,-40]
+      columns:
+        c1:
+        c2:
+        c3:
+      # Rows are populated bottom-to-top, so we invert the order to have
+      # top-to-bottom
+      rows:
+        r5: 
+        r4:
+        r3:
+        r2:
+        r1:
+
 
 outlines:
+  board_outline:
+    - what: rectangle
+      where: /board_center/
+      size: [99.5,99.5]
+      fillet: fillet_radius
+  preview:
+    - what: outline
+      name: board_outline
+    - what: rectangle
+      where: /key/
+      size: [6,0.01]
+      operation: stack
+    - what: rectangle
+      where: /key/
+      size: [0.01,4]
+      operation: stack
+    - what: rectangle
+      size: [20,20]
+      where: /key/
+      operation: stack
 
 pcbs:
+  ergogen_footprints_demo:
+    outlines:
+      main:
+        outline: board_outline
+    footprints:
+      switch_1_1:
+        what: ceoloide/switch_choc_v1_v2
+        where: [choc_v1_v2_c1_r1]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: true
+          solder: false
+          include_stabilizer_pad: true
+          oval_stabilizer_pad: false
+          choc_v1_support: false
+          choc_v2_support: true
+          outer_pad_width_back: 1.6
+        adjust:
+          rotate: 180
+      switch_1_2:
+        what: ceoloide/switch_choc_v1_v2
+        where: [choc_v1_v2_c1_r2]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: true
+          solder: false
+          include_stabilizer_pad: true
+          oval_stabilizer_pad: true
+          choc_v1_support: false
+          choc_v2_support: true
+          outer_pad_width_back: 1.6
+        adjust:
+          rotate: 180
+      switch_1_3:
+        what: ceoloide/switch_choc_v1_v2
+        where: [choc_v1_v2_c1_r3]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: true
+          solder: false
+          choc_v1_support: true
+          choc_v2_support: false
+          outer_pad_width_back: 1.6
+        adjust:
+          rotate: 180
+      switch_1_4:
+        what: ceoloide/switch_choc_v1_v2
+        where: [choc_v1_v2_c1_r4]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: true
+          solder: false
+          choc_v1_support: true
+          choc_v2_support: true
+          outer_pad_width_back: 1.6
+        adjust:
+          rotate: 180
+      switch_1_5:
+        what: ceoloide/switch_choc_v1_v2
+        where: [choc_v1_v2_c1_r5]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: true
+          solder: true
+          choc_v1_support: false
+          choc_v2_support: true
+          oval_stabilizer_pad: true
+          outer_pad_width_back: 1.6
+        adjust:
+          rotate: 180
+      switch_2_1:
+        what: ceoloide/switch_choc_v1_v2
+        where: [choc_v1_v2_c2_r1]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: false
+          solder: true
+          include_stabilizer_pad: true
+          oval_stabilizer_pad: false
+          choc_v1_support: false
+          choc_v2_support: true
+        adjust:
+          rotate: 180
+      switch_2_2:
+        what: ceoloide/switch_choc_v1_v2
+        where: [choc_v1_v2_c2_r2]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: false
+          solder: true
+          include_stabilizer_pad: true
+          oval_stabilizer_pad: true
+          choc_v1_support: false
+          choc_v2_support: true
+        adjust:
+          rotate: 180
+      switch_2_3:
+        what: ceoloide/switch_choc_v1_v2
+        where: [choc_v1_v2_c2_r3]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: false
+          solder: true
+          include_stabilizer_pad: true
+          oval_stabilizer_pad: true
+          choc_v1_support: true
+          choc_v2_support: false
+        adjust:
+          rotate: 180
+      switch_2_4:
+        what: ceoloide/switch_choc_v1_v2
+        where: [choc_v1_v2_c2_r4]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: false
+          solder: true
+          include_stabilizer_pad: true
+          oval_stabilizer_pad: false
+          choc_v1_support: true
+          choc_v2_support: true
+        adjust:
+          rotate: 180
+      switch_2_5:
+        what: ceoloide/switch_choc_v1_v2
+        where: [choc_v1_v2_c2_r5]
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: true
+          solder: true
+          choc_v1_support: false
+          choc_v2_support: true
+          oval_stabilizer_pad: false
+          outer_pad_width_back: 1.6
+        adjust:
+          rotate: 180
+
+      diodes_b:
+        what: ceoloide/diode_tht_sod123
+        where: [/choc_v1_v2_c1_.*/, /choc_v1_v2_c2_.*/]
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+          include_tht: false
+          reversible: false
+          side: B
+        adjust:
+          rotate: -90
+          shift: [-7.75,1]
+
+      diodes_f:
+        what: ceoloide/diode_tht_sod123
+        where: [/choc_v1_v2_c1/, /choc_v1_v2_c2/]
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+          include_tht: false
+          reversible: false
+          side: F
+        adjust:
+          rotate: -90
+          shift: [8.25,1]
