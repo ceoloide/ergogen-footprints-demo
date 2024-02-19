@@ -27,6 +27,7 @@ _autosave-*
 fp-info-cache
 *.pro
 logs
+*.lck
 
 # Netlist files (exported from Eeschema)
 *.net
