@@ -246,3 +246,202 @@ pcbs:
         adjust:
           rotate: -90
           shift: [8.25,1]
+
+      battery_connector_1:
+        what: ceoloide/battery_connector_jst_ph_2
+        where: board_center
+        params:
+          reversible: true
+          include_traces: true
+
+      mounting_hole_1:
+        what: ceoloide/mounting_hole_npth
+        where: board_center
+        params:
+          hole_size: spacer_diameter
+          hole_drill: spacer_diameter
+
+      screw_hole_1:
+        what: ceoloide/mounting_hole_npth
+        where: board_center
+        params:
+          hole_size: screw_diameter
+          hole_drill: screw_diameter
+
+      power_switch_smd_1:
+        what: ceoloide/power_switch_smd_side
+        where: board_center
+        params:
+          reversible: true
+          invert_behavior: true
+
+      power_switch_smd_2:
+        what: ceoloide/power_switch_smd_side
+        where: board_center
+        params:
+          reversible: true
+          invert_behavior: false
+
+      reset_switch_smd_1:
+        what: ceoloide/reset_switch_smd_side
+        where: board_center
+        params:
+          reversible: true
+          include_bosses: true
+
+      reset_switch_smd_2:
+        what: ceoloide/reset_switch_smd_side
+        where: board_center
+        params:
+          reversible: true
+          include_bosses: false
+
+      reset_switch_tht_1:
+        what: ceoloide/reset_switch_tht_top
+        where: board_center
+        params:
+          reversible: true
+
+      trrs_1:
+        what: ceoloide/trrs_pj320a
+        where: board_center
+        params:
+          A: DAT # Tip and first ring can be together
+          C: GND
+          D: VCC
+          reversible: true
+          symmetric: false
+
+      trrs_2:
+        what: ceoloide/trrs_pj320a
+        where: board_center
+        params:
+          A: DAT # Tip and first ring can be together
+          C: GND
+          D: VCC
+          reversible: true
+          symmetric: true
+
+      trrs_3:
+        what: ceoloide/trrs_pj320a
+        where: board_center
+        params:
+          A: DAT # Tip and first ring can be together
+          C: GND
+          D: VCC
+          reversible: false
+          
+      per_key_led_1:
+        what: ceoloide/led_sk6812mini-e
+        where: choc_v1_v2_c2_r2
+        params:
+          P1: VCC
+          P2: LED_U_1 # DOUT
+          P3: GND
+          P4: LED_1 # DIN
+          side: B
+          reversible: false
+          reverse_mount: true
+        adjust:
+          shift: [0, 4.7]
+          
+      per_key_led_2:
+        what: ceoloide/led_sk6812mini-e
+        where: choc_v1_v2_c2_r3
+        params:
+          P1: VCC
+          P2: LED_1 # DOUT
+          P3: GND
+          P4: LED # DIN
+          reversible: true
+          reverse_mount: true
+          include_traces_vias: true
+        adjust:
+          shift: [0, 4.7]
+      
+      underglow_led_1:
+        what: ceoloide/led_sk6812mini-e
+        where: choc_v1_v2_c1_r3
+        params:
+          P1: VCC
+          P2: LED_U_2 # DOUT
+          P3: GND
+          P4: LED_U_1 # DIN
+          reversible: true
+          reverse_mount: false
+          include_traces_vias: true
+        adjust:
+          shift: [0, 4.7]
+      
+      underglow_led_2:
+        what: ceoloide/led_sk6812mini-e
+        where: choc_v1_v2_c1_r1
+        params:
+          P1: VCC
+          P2: LED_U_3 #DOUT
+          P3: GND
+          P4: LED_U_2 #DIN
+          side: B
+          reversible: false
+          reverse_mount: false
+        adjust:
+          shift: [0, 4.7]
+      
+      jlcpcb_order_number_text:
+        what: ceoloide/text
+        where: board_center
+        params:
+          text: JLCJLCJLCJLC
+          reversible: true
+
+      nice_nano_1:
+        what: ceoloide/nice_nano
+        where: board_center
+        params:
+          use_rectangular_jumpers: false
+
+      nice_nano_2:
+        what: ceoloide/nice_nano
+        where: board_center
+        params:
+          use_rectangular_jumpers: true
+      
+      nice_view_1:
+        what: ceoloide/nice_view
+        where: board_center
+        params:
+          MOSI: SDA
+          SCK: SCL
+          reversible: true
+          invert_jumpers_position: false
+      
+      nice_view_2:
+        what: ceoloide/nice_view
+        where: board_center
+        params:
+          MOSI: SDA
+          SCK: SCL
+          reversible: true
+          invert_jumpers_position: true
+      
+      ssd1306_nice_view_1:
+        what: ceoloide/display_ssd1306_nice_view
+        where: board_center
+        params:
+          reversible: true
+          display_type: ssd1306
+      
+      ssd1306_nice_view_2:
+        what: ceoloide/display_ssd1306_nice_view
+        where: board_center
+        params:
+          reversible: true
+          display_type: nice_view
+      
+      ssd1306_nice_view_3:
+        what: ceoloide/display_ssd1306_nice_view
+        where: board_center
+        params:
+          reversible: true
+          display_type: both
+      
