@@ -253,6 +253,9 @@ pcbs:
         params:
           reversible: true
           include_traces: true
+        adjust:
+          shift: [25,-40]
+          rotate: 45
 
       mounting_hole_1:
         what: ceoloide/mounting_hole_npth
@@ -311,6 +314,9 @@ pcbs:
           D: VCC
           reversible: true
           symmetric: false
+        adjust:
+          shift: [40,20]
+          rotate: 45
 
       trrs_2:
         what: ceoloide/trrs_pj320a
@@ -321,6 +327,9 @@ pcbs:
           D: VCC
           reversible: true
           symmetric: true
+        adjust:
+          shift: [50,30]
+          rotate: 45
 
       trrs_3:
         what: ceoloide/trrs_pj320a
@@ -330,6 +339,9 @@ pcbs:
           C: GND
           D: VCC
           reversible: false
+        adjust:
+          shift: [60,40]
+          rotate: 45
           
       per_key_led_1:
         what: ceoloide/led_sk6812mini-e
@@ -393,18 +405,27 @@ pcbs:
         params:
           text: JLCJLCJLCJLC
           reversible: true
+        adjust:
+          shift: [0,40]
+          rotate: 45
 
       nice_nano_1:
         what: ceoloide/nice_nano
         where: board_center
         params:
           use_rectangular_jumpers: false
+        adjust:
+            shift: [25,0]
+            rotate: 45
 
       nice_nano_2:
         what: ceoloide/nice_nano
         where: board_center
         params:
           use_rectangular_jumpers: true
+        adjust:
+          shift: [50,0]
+          rotate: 45
       
       nice_view_1:
         what: ceoloide/nice_view
@@ -414,6 +435,9 @@ pcbs:
           SCK: SCL
           reversible: true
           invert_jumpers_position: false
+        adjust:
+          shift: [25,25]
+          rotate: 45
       
       nice_view_2:
         what: ceoloide/nice_view
@@ -423,6 +447,9 @@ pcbs:
           SCK: SCL
           reversible: true
           invert_jumpers_position: true
+        adjust:
+          shift: [50,25]
+          rotate: 45
       
       ssd1306_nice_view_1:
         what: ceoloide/display_ssd1306_nice_view
