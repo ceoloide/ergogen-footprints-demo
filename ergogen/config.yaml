@@ -357,6 +357,7 @@ pcbs:
       # Top of pins to end of USB-C: 3.70mm
       # Top of pins to bottom of PCB: 30.60mm
       # Top of USB-C to top of PCB: 0.9mm
+      # 
       nice_nano_1:
         what: ceoloide/nice_nano
         where: choc_v1_v2_c2_r1
@@ -433,6 +434,27 @@ pcbs:
           invert_behavior: true
         adjust:
           shift: [u + 7.7,-1.5]
+
+      nice_nano_3:
+        what: ceoloide/nice_nano
+        where: choc_v1_v2_c2_r1
+        params:
+          use_rectangular_jumpers: false
+          show_instructions: false
+          only_required_jumpers: true
+        adjust:
+            shift: [u,-33/2+u/2]
+      
+      nice_view_3:
+        what: ceoloide/nice_view
+        where: choc_v1_v2_c2_r1
+        params:
+          MOSI: SDA
+          SCK: SCL
+          reversible: true
+          invert_jumpers_position: false
+        adjust:
+            shift: [u,-20+u/2]
 
       # power_switch_smd_2:
       #   what: ceoloide/power_switch_smd_side
