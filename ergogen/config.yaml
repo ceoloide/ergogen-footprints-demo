@@ -456,12 +456,14 @@ pcbs:
         adjust:
             shift: [u,-20+u/2]
 
-      # power_switch_smd_2:
-      #   what: ceoloide/power_switch_smd_side
-      #   where: board_center
-      #   params:
-      #     reversible: true
-      #     invert_behavior: false
+      power_switch_smd_2:
+        what: ceoloide/power_switch_smd_side
+        where: board_center
+        params:
+          reversible: true
+          invert_behavior: false
+        adjust:
+          shift: [7.5,-1.5]
 
       # reset_switch_smd_1:
       #   what: ceoloide/reset_switch_smd_side
@@ -514,17 +516,6 @@ pcbs:
         adjust:
           shift: [2u + u/2,-8.5]
           rotate: -90
-
-      # trrs_3:
-      #   what: ceoloide/trrs_pj320a
-      #   where: board_center
-      #   params:
-      #     A: DAT # Tip and first ring can be together
-      #     C: GND
-      #     D: VCC
-      #     reversible: false
-      #   adjust:
-      #     shift: [60,40]
       
       # ssd1306_nice_view_1:
       #   what: ceoloide/display_ssd1306_nice_view
