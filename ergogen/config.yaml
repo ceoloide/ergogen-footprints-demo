@@ -452,23 +452,23 @@ pcbs:
         adjust:
           shift: [7.5,-1.5]
 
-      # reset_switch_smd_1:
-      #   what: ceoloide/reset_switch_smd_side
-      #   where: choc_v1_v2_c2_r1
-      #   params:
-      #     reversible: true
-      #     include_bosses: true
-      #   adjust:
-      #       shift: [3u,7.6]
+      reset_switch_smd_1:
+        what: ceoloide/reset_switch_smd_side
+        where: choc_v1_v2_c2_r1
+        params:
+          reversible: true
+          include_bosses: false
+        adjust:
+            shift: [0,7.9]
 
-      # reset_switch_smd_2:
-      #   what: ceoloide/reset_switch_smd_side
-      #   where: choc_v1_v2_c2_r1
-      #   params:
-      #     reversible: true
-      #     include_bosses: false
-      #   adjust:
-      #       shift: [2u,7.6]
+      reset_switch_smd_2:
+        what: ceoloide/reset_switch_smd_side
+        where: choc_v1_v2_c1_r1
+        params:
+          reversible: true
+          include_bosses: true
+        adjust:
+            shift: [0,7.9]
 
       reset_switch_tht_1:
         what: ceoloide/reset_switch_tht_top

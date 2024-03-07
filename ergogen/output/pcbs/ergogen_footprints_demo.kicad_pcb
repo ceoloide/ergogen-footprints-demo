@@ -4882,7 +4882,7 @@
       (module "ceoloide:power_switch_smd_side" (layer F.Cu) (tedit 64473C6F)
         (at 126.5 101.5 0)
         (attr smd)
-        (fp_text value "reset_button" (at 0 2.5 0) (layer F.Fab)
+        (fp_text value "power_switch" (at 0 2.5 0) (layer F.Fab)
           (effects (font (size 1 1) (thickness 0.15)))
         )
     
@@ -5867,7 +5867,7 @@
       (module "ceoloide:power_switch_smd_side" (layer F.Cu) (tedit 64473C6F)
         (at 107.5 101.5 0)
         (attr smd)
-        (fp_text value "reset_button" (at 0 2.5 0) (layer F.Fab)
+        (fp_text value "power_switch" (at 0 2.5 0) (layer F.Fab)
           (effects (font (size 1 1) (thickness 0.15)))
         )
     
@@ -5943,10 +5943,115 @@
     )
     
 
+        (module "ceoloide:reset_button_smd_side" (layer F.Cu) (tedit 64473C6F)
+          (at 81 54.1 0)
+          (attr smd)
+          (fp_text value "reset_button_smd_side" (at 0 2.5 0) (layer F.Fab)
+            (effects (font (size 1 1) (thickness 0.15)))
+          )
+          (fp_line (start -2.35 -1.75) (end -2.35 1.75) (width 0.1) (layer "Dwgs.User"))
+          (fp_line (start -2.35 -1.75) (end 2.35 -1.75) (width 0.1) (layer "Dwgs.User"))
+          (fp_line (start -2.35 1.75) (end 2.35 1.75) (width 0.1) (layer "Dwgs.User"))
+          (fp_line (start -1.3 -2.75) (end -1.3 -1.75) (width 0.1) (layer "Dwgs.User"))
+          (fp_line (start -1.3 -2.75) (end 1.3 -2.75) (width 0.1) (layer "Dwgs.User"))
+          (fp_line (start 1.3 -2.75) (end 1.3 -1.75) (width 0.1) (layer "Dwgs.User"))
+          (fp_line (start 2.35 -1.75) (end 2.35 1.75) (width 0.1) (layer "Dwgs.User"))
+      
+        (pad "1" smd rect (at 2.625 -0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 13 "GND"))
+        (pad "2" smd rect (at 2.625 0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 18 "RST"))
+        (pad "3" smd rect (at -2.625 -0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 13 "GND"))
+        (pad "4" smd rect (at -2.625 0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 18 "RST"))
+      
+        (fp_text reference "RST1" (at 0 0 0) (layer F.SilkS) hide
+          (effects (font (size 1 1) (thickness 0.15)))
+        )
+        (fp_line (start -2.35 -1.5) (end -2.35 -1.75) (width 0.1) (layer "F.SilkS"))
+        (fp_line (start -2.35 1.5) (end -2.35 1.75) (width 0.1) (layer "F.SilkS"))
+        (fp_line (start -2.1 -1.75) (end -2.35 -1.75) (width 0.1) (layer "F.SilkS"))
+        (fp_line (start -2.1 1.75) (end -2.35 1.75) (width 0.1) (layer "F.SilkS"))
+        (fp_line (start 2.1 -1.75) (end 2.35 -1.75) (width 0.1) (layer "F.SilkS"))
+        (fp_line (start 2.1 1.75) (end 2.35 1.75) (width 0.1) (layer "F.SilkS"))
+        (fp_line (start 2.35 -1.5) (end 2.35 -1.75) (width 0.1) (layer "F.SilkS"))
+        (fp_line (start 2.35 1.5) (end 2.35 1.75) (width 0.1) (layer "F.SilkS"))
+      
+        (pad "1" smd rect (at -2.625 -0.85 180) (size 1.55 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 13 "GND"))
+        (pad "2" smd rect (at -2.625 0.85 180) (size 1.55 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 18 "RST"))
+        (pad "3" smd rect (at 2.625 -0.85 180) (size 1.55 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 13 "GND"))
+        (pad "4" smd rect (at 2.625 0.85 180) (size 1.55 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 18 "RST"))
+      
+        (fp_text reference "RST1" (at 0 0 0) (layer B.SilkS) hide
+          (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+        )
+        (fp_line (start -2.35 -1.5) (end -2.35 -1.75) (width 0.1) (layer "B.SilkS"))
+        (fp_line (start -2.35 1.5) (end -2.35 1.75) (width 0.1) (layer "B.SilkS"))
+        (fp_line (start -2.1 -1.75) (end -2.35 -1.75) (width 0.1) (layer "B.SilkS"))
+        (fp_line (start -2.1 1.75) (end -2.35 1.75) (width 0.1) (layer "B.SilkS"))
+        (fp_line (start 2.1 -1.75) (end 2.35 -1.75) (width 0.1) (layer "B.SilkS"))
+        (fp_line (start 2.1 1.75) (end 2.35 1.75) (width 0.1) (layer "B.SilkS"))
+        (fp_line (start 2.35 -1.5) (end 2.35 -1.75) (width 0.1) (layer "B.SilkS"))
+        (fp_line (start 2.35 1.5) (end 2.35 1.75) (width 0.1) (layer "B.SilkS"))
+      
+      )
+      
+
+        (module "ceoloide:reset_button_smd_side" (layer F.Cu) (tedit 64473C6F)
+          (at 62 54.1 0)
+          (attr smd)
+          (fp_text value "reset_button_smd_side" (at 0 2.5 0) (layer F.Fab)
+            (effects (font (size 1 1) (thickness 0.15)))
+          )
+          (fp_line (start -2.35 -1.75) (end -2.35 1.75) (width 0.1) (layer "Dwgs.User"))
+          (fp_line (start -2.35 -1.75) (end 2.35 -1.75) (width 0.1) (layer "Dwgs.User"))
+          (fp_line (start -2.35 1.75) (end 2.35 1.75) (width 0.1) (layer "Dwgs.User"))
+          (fp_line (start -1.3 -2.75) (end -1.3 -1.75) (width 0.1) (layer "Dwgs.User"))
+          (fp_line (start -1.3 -2.75) (end 1.3 -2.75) (width 0.1) (layer "Dwgs.User"))
+          (fp_line (start 1.3 -2.75) (end 1.3 -1.75) (width 0.1) (layer "Dwgs.User"))
+          (fp_line (start 2.35 -1.75) (end 2.35 1.75) (width 0.1) (layer "Dwgs.User"))
+      
+        (pad "" np_thru_hole circle (at 0 -1.375 180) (size 0.75 0.75) (drill 0.75) (layers "*.Cu" "*.Mask"))
+        (pad "" np_thru_hole circle (at 0 1.375 180) (size 0.75 0.75) (drill 0.75) (layers "*.Cu" "*.Mask"))
+      
+        (pad "1" smd rect (at 2.625 -0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 13 "GND"))
+        (pad "2" smd rect (at 2.625 0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 18 "RST"))
+        (pad "3" smd rect (at -2.625 -0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 13 "GND"))
+        (pad "4" smd rect (at -2.625 0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 18 "RST"))
+      
+        (fp_text reference "RST2" (at 0 0 0) (layer F.SilkS) hide
+          (effects (font (size 1 1) (thickness 0.15)))
+        )
+        (fp_line (start -2.35 -1.5) (end -2.35 -1.75) (width 0.1) (layer "F.SilkS"))
+        (fp_line (start -2.35 1.5) (end -2.35 1.75) (width 0.1) (layer "F.SilkS"))
+        (fp_line (start -2.1 -1.75) (end -2.35 -1.75) (width 0.1) (layer "F.SilkS"))
+        (fp_line (start -2.1 1.75) (end -2.35 1.75) (width 0.1) (layer "F.SilkS"))
+        (fp_line (start 2.1 -1.75) (end 2.35 -1.75) (width 0.1) (layer "F.SilkS"))
+        (fp_line (start 2.1 1.75) (end 2.35 1.75) (width 0.1) (layer "F.SilkS"))
+        (fp_line (start 2.35 -1.5) (end 2.35 -1.75) (width 0.1) (layer "F.SilkS"))
+        (fp_line (start 2.35 1.5) (end 2.35 1.75) (width 0.1) (layer "F.SilkS"))
+      
+        (pad "1" smd rect (at -2.625 -0.85 180) (size 1.55 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 13 "GND"))
+        (pad "2" smd rect (at -2.625 0.85 180) (size 1.55 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 18 "RST"))
+        (pad "3" smd rect (at 2.625 -0.85 180) (size 1.55 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 13 "GND"))
+        (pad "4" smd rect (at 2.625 0.85 180) (size 1.55 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 18 "RST"))
+      
+        (fp_text reference "RST2" (at 0 0 0) (layer B.SilkS) hide
+          (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+        )
+        (fp_line (start -2.35 -1.5) (end -2.35 -1.75) (width 0.1) (layer "B.SilkS"))
+        (fp_line (start -2.35 1.5) (end -2.35 1.75) (width 0.1) (layer "B.SilkS"))
+        (fp_line (start -2.1 -1.75) (end -2.35 -1.75) (width 0.1) (layer "B.SilkS"))
+        (fp_line (start -2.1 1.75) (end -2.35 1.75) (width 0.1) (layer "B.SilkS"))
+        (fp_line (start 2.1 -1.75) (end 2.35 -1.75) (width 0.1) (layer "B.SilkS"))
+        (fp_line (start 2.1 1.75) (end 2.35 1.75) (width 0.1) (layer "B.SilkS"))
+        (fp_line (start 2.35 -1.5) (end 2.35 -1.75) (width 0.1) (layer "B.SilkS"))
+        (fp_line (start 2.35 1.5) (end 2.35 1.75) (width 0.1) (layer "B.SilkS"))
+      
+      )
+      
+
             (module "ceoloide:reset_switch_tht_top" (layer F.Cu) (tedit 5B9559E6) (tstamp 61905781)
                 (at 119 92.7 0)
                 (fp_text value "reset_switch_tht_top" (at 0 -2.55 90) (layer F.Fab) (effects (font (size 1 1) (thickness 0.15))))
-                (fp_text reference "RST1" (at 0 2.55 90) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
+                (fp_text reference "RST3" (at 0 2.55 90) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
             
                 (fp_text user "RST" (at 0 0 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
                 (fp_line (start -3 1.75) (end 3 1.75) (layer F.SilkS) (width 0.15))
