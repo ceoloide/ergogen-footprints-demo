@@ -290,26 +290,27 @@ pcbs:
           
       per_key_led_1:
         what: ceoloide/led_sk6812mini-e
-        where: choc_v1_v2_c2_r2
+        where: choc_v1_v2_c1_r2
         params:
           P1: VCC
           P2: LED_U_1 # DOUT
           P3: GND
-          P4: LED_1 # DIN
+          P4: LED # DIN
           side: B
-          reversible: false
+          reversible: true
           reverse_mount: true
+          include_traces_vias: false
         adjust:
           shift: [0, 4.7]
           
       per_key_led_2:
         what: ceoloide/led_sk6812mini-e
-        where: choc_v1_v2_c2_r3
+        where: choc_v1_v2_c1_r3
         params:
           P1: VCC
-          P2: LED_1 # DOUT
+          P2: LED_3 # DOUT
           P3: GND
-          P4: LED # DIN
+          P4: LED_2 # DIN
           reversible: true
           reverse_mount: true
           include_traces_vias: true
@@ -321,28 +322,14 @@ pcbs:
         where: choc_v1_v2_c1_r3
         params:
           P1: VCC
-          P2: LED_U_2 # DOUT
+          P2: LED_2 # DOUT
           P3: GND
           P4: LED_U_1 # DIN
           reversible: true
           reverse_mount: false
           include_traces_vias: true
         adjust:
-          shift: [0, 4.7]
-      
-      underglow_led_2:
-        what: ceoloide/led_sk6812mini-e
-        where: choc_v1_v2_c1_r1
-        params:
-          P1: VCC
-          P2: LED_U_3 #DOUT
-          P3: GND
-          P4: LED_U_2 #DIN
-          side: B
-          reversible: false
-          reverse_mount: false
-        adjust:
-          shift: [0, 4.7]
+          shift: [0, 4.7 + 4.4]
       
       jlcpcb_order_number_text:
         what: ceoloide/text
