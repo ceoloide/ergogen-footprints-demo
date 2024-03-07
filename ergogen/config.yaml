@@ -115,7 +115,7 @@ pcbs:
           oval_stabilizer_pad: false
           choc_v1_support: false
           choc_v2_support: true
-          outer_pad_width_back: 1.6
+          outer_pad_width_back: 1.8
         adjust:
           rotate: 180
       switch_1_2:
@@ -131,7 +131,7 @@ pcbs:
           oval_stabilizer_pad: true
           choc_v1_support: false
           choc_v2_support: true
-          outer_pad_width_back: 1.6
+          outer_pad_width_back: 1.8
         adjust:
           rotate: 180
       switch_1_3:
@@ -145,7 +145,7 @@ pcbs:
           solder: false
           choc_v1_support: true
           choc_v2_support: false
-          outer_pad_width_back: 1.6
+          outer_pad_width_back: 1.8
         adjust:
           rotate: 180
       switch_1_4:
@@ -159,7 +159,7 @@ pcbs:
           solder: false
           choc_v1_support: true
           choc_v2_support: true
-          outer_pad_width_back: 1.6
+          outer_pad_width_back: 1.8
         adjust:
           rotate: 180
       switch_1_5:
@@ -174,7 +174,7 @@ pcbs:
           choc_v1_support: false
           choc_v2_support: true
           oval_stabilizer_pad: true
-          outer_pad_width_back: 1.6
+          outer_pad_width_back: 1.8
         adjust:
           rotate: 180
       switch_2_1:
@@ -249,7 +249,7 @@ pcbs:
           choc_v1_support: false
           choc_v2_support: true
           oval_stabilizer_pad: false
-          outer_pad_width_back: 1.6
+          outer_pad_width_back: 1.8
         adjust:
           rotate: 180
 
