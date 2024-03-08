@@ -372,9 +372,9 @@
             (pad "" np_thru_hole circle (at 0 0 180) (size 5 5)
                 (drill 5) (layers *.Cu))
         
-            (pad "" np_thru_hole circle (at 5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.SilkS *.Mask))
+            (pad "" np_thru_hole circle (at 5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask) )
         
-            (pad "" np_thru_hole circle (at -5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.SilkS *.Mask))
+            (pad "" np_thru_hole circle (at -5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask) )
         
             
             (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers *.Cu *.Mask))
@@ -459,9 +459,9 @@
             (pad "" np_thru_hole circle (at 0 0 180) (size 5 5)
                 (drill 5) (layers *.Cu))
         
-            (pad "" thru_hole oval (at 5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers *.Cu *.SilkS *.Mask))
+            (pad "" thru_hole oval (at 5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers *.Cu *.Mask) )
         
-            (pad "" thru_hole oval (at -5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers *.Cu *.SilkS *.Mask))
+            (pad "" thru_hole oval (at -5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers *.Cu *.Mask) )
         
             
             (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers *.Cu *.Mask))
@@ -635,9 +635,9 @@
             (pad "" np_thru_hole circle (at 5.5 0 180) (size 1.9 1.9) (drill 1.9) (layers *.Cu))
             (pad "" np_thru_hole circle (at -5.5 0 180) (size 1.9 1.9) (drill 1.9) (layers *.Cu))
         
-            (pad "" np_thru_hole circle (at 5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.SilkS *.Mask))
+            (pad "" np_thru_hole circle (at 5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask) )
         
-            (pad "" np_thru_hole circle (at -5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.SilkS *.Mask))
+            (pad "" np_thru_hole circle (at -5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask) )
         
             
             (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers *.Cu *.Mask))
@@ -722,9 +722,9 @@
             (pad "" np_thru_hole circle (at 0 0 180) (size 5 5)
                 (drill 5) (layers *.Cu))
         
-            (pad "" thru_hole oval (at -5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers *.Cu *.SilkS *.Mask))
+            (pad "" thru_hole oval (at -5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers *.Cu *.Mask) (net 5 "c1_r5"))
         
-            (pad "" thru_hole oval (at 5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers *.Cu *.SilkS *.Mask))
+            (pad "" thru_hole oval (at 5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers *.Cu *.Mask) (net 5 "c1_r5"))
         
             
             (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers *.Cu *.Mask))
@@ -815,9 +815,9 @@
             (pad "" np_thru_hole circle (at 0 0 180) (size 5 5)
                 (drill 5) (layers *.Cu))
         
-            (pad "" np_thru_hole circle (at 5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.SilkS *.Mask))
+            (pad "" np_thru_hole circle (at 5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask) )
         
-            (pad "" np_thru_hole circle (at -5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.SilkS *.Mask))
+            (pad "" np_thru_hole circle (at -5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask) )
         
             (pad 2 thru_hole circle (at 0 -5.9 375) (size 2.032 2.032) (drill 1.27) (layers *.Cu *.Mask) (net 0 ""))
         
@@ -839,9 +839,9 @@
             (pad "" np_thru_hole circle (at 0 0 180) (size 5 5)
                 (drill 5) (layers *.Cu))
         
-            (pad "" thru_hole oval (at 5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers *.Cu *.SilkS *.Mask))
+            (pad "" thru_hole oval (at 5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers *.Cu *.Mask) )
         
-            (pad "" thru_hole oval (at -5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers *.Cu *.SilkS *.Mask))
+            (pad "" thru_hole oval (at -5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers *.Cu *.Mask) )
         
             (pad 2 thru_hole circle (at 0 -5.9 375) (size 2.032 2.032) (drill 1.27) (layers *.Cu *.Mask) (net 0 ""))
         
@@ -889,9 +889,9 @@
             (pad "" np_thru_hole circle (at 5.5 0 180) (size 1.9 1.9) (drill 1.9) (layers *.Cu))
             (pad "" np_thru_hole circle (at -5.5 0 180) (size 1.9 1.9) (drill 1.9) (layers *.Cu))
         
-            (pad "" np_thru_hole circle (at 5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.SilkS *.Mask))
+            (pad "" np_thru_hole circle (at 5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask) )
         
-            (pad "" np_thru_hole circle (at -5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.SilkS *.Mask))
+            (pad "" np_thru_hole circle (at -5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask) )
         
             (pad 2 thru_hole circle (at 0 -5.9 375) (size 2.032 2.032) (drill 1.27) (layers *.Cu *.Mask) (net 0 ""))
         
@@ -913,9 +913,9 @@
             (pad "" np_thru_hole circle (at 0 0 180) (size 5 5)
                 (drill 5) (layers *.Cu))
         
-            (pad "" np_thru_hole circle (at -5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.SilkS *.Mask))
+            (pad "" np_thru_hole circle (at -5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask) (net 10 "c2_r5"))
         
-            (pad "" np_thru_hole circle (at 5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.SilkS *.Mask))
+            (pad "" np_thru_hole circle (at 5.00 5.15 180) (size 1.6 1.6) (drill 1.6) (layers *.Cu *.Mask) (net 10 "c2_r5"))
         
             
             (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers *.Cu *.Mask))
