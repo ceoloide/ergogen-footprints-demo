@@ -501,36 +501,36 @@ pcbs:
           reversible: true
           symmetric: true
         adjust:
-          shift: [2u + u/2,-8.5]
+          shift: [2u + u/2,-8]
           rotate: -90
       
-      # ssd1306_nice_view_1:
-      #   what: ceoloide/display_ssd1306_nice_view
-      #   where: choc_v1_v2_c2_r5
-      #   params:
-      #     reversible: true
-      #     display_type: ssd1306
-      #   adjust:
-      #       shift: [u,20+u/2]
-      #       rotate: 180
+      display_ssd1306_1:
+        what: ceoloide/display_ssd1306
+        where: choc_v1_v2_c2_r5
+        params:
+          reversible: true
+          invert_jumpers_position: false
+        adjust:
+            shift: [3u,20-u/2]
+            rotate: 180
       
-      # ssd1306_nice_view_2:
-      #   what: ceoloide/display_ssd1306_nice_view
-      #   where: choc_v1_v2_c2_r5
-      #   params:
-      #     reversible: true
-      #     display_type: nice_view
-      #   adjust:
-      #       shift: [2u,20+u/2]
-      #       rotate: 180
+      display_ssd1306_2:
+        what: ceoloide/display_ssd1306
+        where: choc_v1_v2_c2_r5
+        params:
+          reversible: true
+          invert_jumpers_position: true
+        adjust:
+            shift: [2u,20-u/2]
+            rotate: 180
       
-      # ssd1306_nice_view_3:
-      #   what: ceoloide/display_ssd1306_nice_view
-      #   where: choc_v1_v2_c2_r5
-      #   params:
-      #     reversible: true
-      #     display_type: both
-      #   adjust:
-      #       shift: [3u,20+u/2]
-      #       rotate: 180
+      display_ssd1306_3:
+        what: ceoloide/display_ssd1306
+        where: choc_v1_v2_c2_r5
+        params:
+          reversible: true
+          invert_jumpers_position: false
+        adjust:
+            shift: [u,20-u/2]
+            rotate: 180
       
