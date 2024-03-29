@@ -492,7 +492,7 @@ pcbs:
           reversible: true
           symmetric: false
         adjust:
-          shift: [2u + u/2,1]
+          shift: [2u + u/2,2.15]
           rotate: -90
 
       trrs_2:
@@ -502,10 +502,10 @@ pcbs:
           A: DAT # Tip and first ring can be together
           C: GND
           D: VCC
-          reversible: true
+          reversible: false
           symmetric: true
         adjust:
-          shift: [2u + u/2,-8]
+          shift: [2u + u/2,-5.70]
           rotate: -90
       
       display_ssd1306_1:
