@@ -16,7 +16,7 @@ points:
     board_center:
       anchor:
         shift: [100, -100] # Fix KiCad placement
-        # rotate: -45
+        # rotate: -45 # Test footprint rotations
       key:
         tags:
           - helper
@@ -45,7 +45,7 @@ points:
         r1:
   mirror:
     ref: board_center
-    distance: 105
+    distance: 135
 
 outlines:
   board_outline:
@@ -267,6 +267,7 @@ pcbs:
         adjust:
           rotate: -90
           shift: [-7.75,1]
+          resist: true
 
       diodes_f:
         what: ceoloide/diode_tht_sod123
@@ -280,6 +281,7 @@ pcbs:
         adjust:
           rotate: -90
           shift: [8.25,1]
+          resist: true
 
       mounting_hole_1:
         what: ceoloide/mounting_hole_npth
