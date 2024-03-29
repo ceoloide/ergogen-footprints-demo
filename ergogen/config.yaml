@@ -43,7 +43,9 @@ points:
         r3:
         r2:
         r1:
-
+  mirror:
+    ref: board_center
+    distance: 105
 
 outlines:
   board_outline:
@@ -104,7 +106,7 @@ pcbs:
     footprints:
       switch_1_1:
         what: ceoloide/switch_choc_v1_v2
-        where: [choc_v1_v2_c1_r1]
+        where: /choc_v1_v2_c1_r1/
         params:
           from: "{{column_net}}"
           to: "{{colrow}}"
@@ -120,7 +122,7 @@ pcbs:
           rotate: 180
       switch_1_2:
         what: ceoloide/switch_choc_v1_v2
-        where: [choc_v1_v2_c1_r2]
+        where: /choc_v1_v2_c1_r2/
         params:
           from: "{{column_net}}"
           to: "{{colrow}}"
@@ -136,7 +138,7 @@ pcbs:
           rotate: 180
       switch_1_3:
         what: ceoloide/switch_choc_v1_v2
-        where: [choc_v1_v2_c1_r3]
+        where: /choc_v1_v2_c1_r3/
         params:
           from: "{{column_net}}"
           to: "{{colrow}}"
@@ -150,7 +152,7 @@ pcbs:
           rotate: 180
       switch_1_4:
         what: ceoloide/switch_choc_v1_v2
-        where: [choc_v1_v2_c1_r4]
+        where: /choc_v1_v2_c1_r4/
         params:
           from: "{{column_net}}"
           to: "{{colrow}}"
@@ -164,7 +166,7 @@ pcbs:
           rotate: 180
       switch_1_5:
         what: ceoloide/switch_choc_v1_v2
-        where: [choc_v1_v2_c1_r5]
+        where: /choc_v1_v2_c1_r5/
         params:
           from: "{{column_net}}"
           to: "{{colrow}}"
@@ -179,7 +181,7 @@ pcbs:
           rotate: 180
       switch_2_1:
         what: ceoloide/switch_choc_v1_v2
-        where: [choc_v1_v2_c2_r1]
+        where: /choc_v1_v2_c2_r1/
         params:
           from: "{{column_net}}"
           to: "{{colrow}}"
@@ -194,7 +196,7 @@ pcbs:
           rotate: 180
       switch_2_2:
         what: ceoloide/switch_choc_v1_v2
-        where: [choc_v1_v2_c2_r2]
+        where: /choc_v1_v2_c2_r2/
         params:
           from: "{{column_net}}"
           to: "{{colrow}}"
@@ -209,7 +211,7 @@ pcbs:
           rotate: 180
       switch_2_3:
         what: ceoloide/switch_choc_v1_v2
-        where: [choc_v1_v2_c2_r3]
+        where: /choc_v1_v2_c2_r3/
         params:
           from: "{{column_net}}"
           to: "{{colrow}}"
@@ -224,7 +226,7 @@ pcbs:
           rotate: 180
       switch_2_4:
         what: ceoloide/switch_choc_v1_v2
-        where: [choc_v1_v2_c2_r4]
+        where: /choc_v1_v2_c2_r4/
         params:
           from: "{{column_net}}"
           to: "{{colrow}}"
@@ -239,13 +241,13 @@ pcbs:
           rotate: 180
       switch_2_5:
         what: ceoloide/switch_choc_v1_v2
-        where: [choc_v1_v2_c2_r5]
+        where: /choc_v1_v2_c2_r5/
         params:
           from: "{{column_net}}"
           to: "{{colrow}}"
           reversible: true
           hotswap: true
-          solder: true
+          solder: false
           choc_v1_support: false
           choc_v2_support: true
           oval_stabilizer_pad: false
@@ -290,7 +292,7 @@ pcbs:
           
       per_key_led_1:
         what: ceoloide/led_sk6812mini-e
-        where: choc_v1_v2_c1_r2
+        where: /choc_v1_v2_c1_r2/
         params:
           P1: VCC
           P2: LED_U_1 # DOUT
@@ -305,7 +307,7 @@ pcbs:
           
       per_key_led_2:
         what: ceoloide/led_sk6812mini-e
-        where: choc_v1_v2_c1_r3
+        where: /choc_v1_v2_c1_r3/
         params:
           P1: VCC
           P2: LED_3 # DOUT
@@ -319,7 +321,7 @@ pcbs:
       
       underglow_led_1:
         what: ceoloide/led_sk6812mini-e
-        where: choc_v1_v2_c1_r3
+        where: /choc_v1_v2_c1_r3/
         params:
           P1: VCC
           P2: LED_2 # DOUT
@@ -333,7 +335,7 @@ pcbs:
       
       jlcpcb_order_number_text:
         what: ceoloide/text
-        where: choc_v1_v2_c1_r1
+        where: /choc_v1_v2_c1_r1/
         params:
           text: JLCJLCJLCJLC
           reversible: true
@@ -347,7 +349,7 @@ pcbs:
       # 
       nice_nano_1:
         what: ceoloide/nice_nano
-        where: choc_v1_v2_c2_r1
+        where: /choc_v1_v2_c2_r1/
         params:
           use_rectangular_jumpers: true
           show_instructions: false
@@ -356,7 +358,7 @@ pcbs:
 
       nice_view_1:
         what: ceoloide/nice_view
-        where: choc_v1_v2_c2_r1
+        where: /choc_v1_v2_c2_r1/
         params:
           MOSI: SDA
           SCK: SCL
@@ -367,7 +369,7 @@ pcbs:
 
       nice_nano_2:
         what: ceoloide/nice_nano
-        where: choc_v1_v2_c2_r1
+        where: /choc_v1_v2_c2_r1/
         params:
           use_rectangular_jumpers: false
           show_instructions: false
@@ -376,7 +378,7 @@ pcbs:
       
       nice_view_2:
         what: ceoloide/nice_view
-        where: choc_v1_v2_c2_r1
+        where: /choc_v1_v2_c2_r1/
         params:
           MOSI: SDA
           SCK: SCL
@@ -387,7 +389,7 @@ pcbs:
 
       screw_hole_1:
         what: ceoloide/mounting_hole_npth
-        where: board_center
+        where: /board_center/
         params:
           hole_size: screw_diameter
           hole_drill: screw_diameter
@@ -396,7 +398,7 @@ pcbs:
 
       screw_hole_2:
         what: ceoloide/mounting_hole_npth
-        where: board_center
+        where: /board_center/
         params:
           hole_size: screw_diameter
           hole_drill: screw_diameter
@@ -405,7 +407,7 @@ pcbs:
 
       battery_connector_1:
         what: ceoloide/battery_connector_jst_ph_2
-        where: board_center
+        where: /board_center/
         params:
           reversible: true
           include_traces: true
@@ -415,7 +417,7 @@ pcbs:
 
       power_switch_smd_1:
         what: ceoloide/power_switch_smd_side
-        where: board_center
+        where: /board_center/
         params:
           reversible: true
           invert_behavior: true
@@ -424,7 +426,7 @@ pcbs:
 
       nice_nano_3:
         what: ceoloide/nice_nano
-        where: choc_v1_v2_c2_r1
+        where: /choc_v1_v2_c2_r1/
         params:
           use_rectangular_jumpers: false
           show_instructions: false
@@ -434,7 +436,7 @@ pcbs:
       
       nice_view_3:
         what: ceoloide/nice_view
-        where: choc_v1_v2_c2_r1
+        where: /choc_v1_v2_c2_r1/
         params:
           MOSI: SDA
           SCK: SCL
@@ -445,7 +447,7 @@ pcbs:
 
       power_switch_smd_2:
         what: ceoloide/power_switch_smd_side
-        where: board_center
+        where: /board_center/
         params:
           reversible: true
           invert_behavior: false
@@ -454,7 +456,7 @@ pcbs:
 
       reset_switch_smd_1:
         what: ceoloide/reset_switch_smd_side
-        where: choc_v1_v2_c2_r1
+        where: /choc_v1_v2_c2_r1/
         params:
           reversible: true
           include_bosses: false
@@ -463,7 +465,7 @@ pcbs:
 
       reset_switch_smd_2:
         what: ceoloide/reset_switch_smd_side
-        where: choc_v1_v2_c1_r1
+        where: /choc_v1_v2_c1_r1/
         params:
           reversible: true
           include_bosses: true
@@ -472,7 +474,7 @@ pcbs:
 
       reset_switch_tht_1:
         what: ceoloide/reset_switch_tht_top
-        where: board_center
+        where: /board_center/
         params:
           reversible: true
         adjust:
@@ -480,7 +482,7 @@ pcbs:
 
       trrs_1:
         what: ceoloide/trrs_pj320a
-        where: board_center
+        where: /board_center/
         params:
           A: DAT
           C: GND
@@ -493,7 +495,7 @@ pcbs:
 
       trrs_2:
         what: ceoloide/trrs_pj320a
-        where: board_center
+        where: /board_center/
         params:
           A: DAT # Tip and first ring can be together
           C: GND
@@ -506,7 +508,7 @@ pcbs:
       
       display_ssd1306_1:
         what: ceoloide/display_ssd1306
-        where: choc_v1_v2_c2_r5
+        where: /choc_v1_v2_c2_r5/
         params:
           reversible: true
           invert_jumpers_position: false
@@ -516,7 +518,7 @@ pcbs:
       
       display_ssd1306_2:
         what: ceoloide/display_ssd1306
-        where: choc_v1_v2_c2_r5
+        where: /choc_v1_v2_c2_r5/
         params:
           reversible: true
           invert_jumpers_position: true
@@ -526,7 +528,7 @@ pcbs:
       
       display_ssd1306_3:
         what: ceoloide/display_ssd1306
-        where: choc_v1_v2_c2_r5
+        where: /choc_v1_v2_c2_r5/
         params:
           reversible: true
           invert_jumpers_position: false
