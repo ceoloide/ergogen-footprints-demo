@@ -486,10 +486,10 @@ pcbs:
         what: ceoloide/trrs_pj320a
         where: /board_center/
         params:
-          A: DAT
-          C: GND
-          D: VCC
-          reversible: true
+          SL: GND
+          R2: DAT
+          TP: VCC
+          reversible: false
           symmetric: false
         adjust:
           shift: [2u + u/2,2.15]
@@ -499,10 +499,10 @@ pcbs:
         what: ceoloide/trrs_pj320a
         where: /board_center/
         params:
-          A: DAT # Tip and first ring can be together
-          C: GND
-          D: VCC
-          reversible: false
+          SL: GND
+          R2: DAT
+          TP: VCC # Tip and Ring 1 are combined
+          reversible: true
           symmetric: true
         adjust:
           shift: [2u + u/2,-5.70]
