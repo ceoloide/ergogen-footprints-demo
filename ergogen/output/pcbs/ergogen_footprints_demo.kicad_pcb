@@ -11754,7 +11754,7 @@
     
 
         (module "ceoloide:reset_button_smd_side" (layer F.Cu) (tedit 64473C6F)
-          (at 81 54.1 0)
+          (at 81 54.5 0)
           (attr smd)
           (fp_text value "reset_button_smd_side" (at 0 2.5 0) (layer F.Fab)
             (effects (font (size 1 1) (thickness 0.15)))
@@ -11805,7 +11805,7 @@
       
 
         (module "ceoloide:reset_button_smd_side" (layer F.Cu) (tedit 64473C6F)
-          (at 254 54.1 0)
+          (at 254 54.5 0)
           (attr smd)
           (fp_text value "reset_button_smd_side" (at 0 2.5 0) (layer F.Fab)
             (effects (font (size 1 1) (thickness 0.15)))
@@ -11856,7 +11856,7 @@
       
 
         (module "ceoloide:reset_button_smd_side" (layer F.Cu) (tedit 64473C6F)
-          (at 62 54.1 0)
+          (at 62 54.5 0)
           (attr smd)
           (fp_text value "reset_button_smd_side" (at 0 2.5 0) (layer F.Fab)
             (effects (font (size 1 1) (thickness 0.15)))
@@ -11910,7 +11910,7 @@
       
 
         (module "ceoloide:reset_button_smd_side" (layer F.Cu) (tedit 64473C6F)
-          (at 273 54.1 0)
+          (at 273 54.5 0)
           (attr smd)
           (fp_text value "reset_button_smd_side" (at 0 2.5 0) (layer F.Fab)
             (effects (font (size 1 1) (thickness 0.15)))
