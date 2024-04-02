@@ -3353,7 +3353,7 @@
 
           
           
-        (module "ceoloide:nice_nano" (layer F.Cu) (tedit 6451A4F1)
+        (module "ceoloide:mcu_nice_nano" (layer F.Cu) (tedit 6451A4F1)
           (attr virtual)
           (at 138 69 0)
           (fp_text reference "MCU1" (at 0 -15 0) (layer F.SilkS) hide
@@ -4328,7 +4328,7 @@
 
           
           
-        (module "ceoloide:nice_nano" (layer F.Cu) (tedit 6451A4F1)
+        (module "ceoloide:mcu_nice_nano" (layer F.Cu) (tedit 6451A4F1)
           (attr virtual)
           (at 197 69 0)
           (fp_text reference "MCU2" (at 0 -15 0) (layer F.SilkS) hide
@@ -5301,7 +5301,7 @@
         
     
 
-      (module "ceoloide:nice_view" (layer F.Cu) (tedit 6448AF5B)
+      (module "ceoloide:display_nice_view" (layer F.Cu) (tedit 6448AF5B)
         (at 138 72.5 0)
         (attr virtual)
         (fp_text reference "DISP1" (at 0 20 0) (layer F.SilkS) hide
@@ -5452,7 +5452,7 @@
     (segment (start 143.080 89.200) (end 143.080 90.950) (width 0.25) (layer "B.Cu") (net 95))
     
 
-      (module "ceoloide:nice_view" (layer F.Cu) (tedit 6448AF5B)
+      (module "ceoloide:display_nice_view" (layer F.Cu) (tedit 6448AF5B)
         (at 197 72.5 0)
         (attr virtual)
         (fp_text reference "DISP2" (at 0 20 0) (layer F.SilkS) hide
@@ -5605,7 +5605,7 @@
 
           
           
-        (module "ceoloide:nice_nano" (layer F.Cu) (tedit 6451A4F1)
+        (module "ceoloide:mcu_nice_nano" (layer F.Cu) (tedit 6451A4F1)
           (attr virtual)
           (at 119 69 0)
           (fp_text reference "MCU3" (at 0 -15 0) (layer F.SilkS) hide
@@ -7264,7 +7264,7 @@
 
           
           
-        (module "ceoloide:nice_nano" (layer F.Cu) (tedit 6451A4F1)
+        (module "ceoloide:mcu_nice_nano" (layer F.Cu) (tedit 6451A4F1)
           (attr virtual)
           (at 216 69 0)
           (fp_text reference "MCU4" (at 0 -15 0) (layer F.SilkS) hide
@@ -8921,7 +8921,7 @@
         
     
 
-      (module "ceoloide:nice_view" (layer F.Cu) (tedit 6448AF5B)
+      (module "ceoloide:display_nice_view" (layer F.Cu) (tedit 6448AF5B)
         (at 119 72.5 0)
         (attr virtual)
         (fp_text reference "DISP3" (at 0 20 0) (layer F.SilkS) hide
@@ -9072,7 +9072,7 @@
     (segment (start 124.080 89.200) (end 124.080 87.450) (width 0.25) (layer "B.Cu") (net 95))
     
 
-      (module "ceoloide:nice_view" (layer F.Cu) (tedit 6448AF5B)
+      (module "ceoloide:display_nice_view" (layer F.Cu) (tedit 6448AF5B)
         (at 216 72.5 0)
         (attr virtual)
         (fp_text reference "DISP4" (at 0 20 0) (layer F.SilkS) hide
@@ -9251,7 +9251,7 @@
   )
   
 
-            (module "ceoloide/battery_connector_jst_ph_2" (layer F.Cu) (tedit 6135B927)
+            (module "ceoloide:battery_connector_jst_ph_2" (layer F.Cu) (tedit 6135B927)
                 (at 120.5 98.75 -90)
 
                 (descr "JST PH series connector, S2B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf)")
@@ -9438,7 +9438,7 @@
         (segment (start 118.700 99.750) (end 120.500 99.750) (width 0.25) (layer "B.Cu") (net 164))
         
 
-            (module "ceoloide/battery_connector_jst_ph_2" (layer F.Cu) (tedit 6135B927)
+            (module "ceoloide:battery_connector_jst_ph_2" (layer F.Cu) (tedit 6135B927)
                 (at 214.5 98.75 90)
 
                 (descr "JST PH series connector, S2B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf)")
@@ -9631,6 +9631,9 @@
         (fp_text value "power_switch" (at 0 2.5 0) (layer F.Fab)
           (effects (font (size 1 1) (thickness 0.15)))
         )
+        (fp_text reference "PWR1" (at -3.6 0 -90) (layer F.SilkS) hide
+          (effects (font (size 1 1) (thickness 0.15)))
+        )
     
         (fp_line (start -1.305 -3.35) (end -1.305 3.35) (layer F.Fab) (width 0.1))
         (fp_line (start 1.295 -3.35) (end -1.305 -3.35) (layer F.Fab) (width 0.1))
@@ -9651,9 +9654,6 @@
         (pad 3 smd rect (at -1.735 -2.25 90) (size 0.7 1.5) (layers F.Cu F.Paste F.Mask) (net 162 "BAT_P"))
 
     
-        (fp_text reference "PWR1" (at -3.6 0 -90) (layer F.SilkS) hide
-          (effects (font (size 1 1) (thickness 0.15)))
-        )
         (fp_text user "ON" (at 0 -4.5 0) (layer "F.SilkS")
           (effects (font (size 1 1) (thickness 0.15)) (justify bottom))
         )
@@ -9710,6 +9710,9 @@
         (fp_text value "power_switch" (at 0 2.5 0) (layer F.Fab)
           (effects (font (size 1 1) (thickness 0.15)))
         )
+        (fp_text reference "PWR2" (at -3.6 0 -90) (layer F.SilkS) hide
+          (effects (font (size 1 1) (thickness 0.15)))
+        )
     
         (fp_line (start -1.305 -3.35) (end -1.305 3.35) (layer F.Fab) (width 0.1))
         (fp_line (start 1.295 -3.35) (end -1.305 -3.35) (layer F.Fab) (width 0.1))
@@ -9730,9 +9733,6 @@
         (pad 3 smd rect (at -1.735 -2.25 90) (size 0.7 1.5) (layers F.Cu F.Paste F.Mask) (net 162 "BAT_P"))
 
     
-        (fp_text reference "PWR2" (at -3.6 0 -90) (layer F.SilkS) hide
-          (effects (font (size 1 1) (thickness 0.15)))
-        )
         (fp_text user "ON" (at 0 -4.5 0) (layer "F.SilkS")
           (effects (font (size 1 1) (thickness 0.15)) (justify bottom))
         )
@@ -9785,7 +9785,7 @@
 
           
           
-        (module "ceoloide:nice_nano" (layer F.Cu) (tedit 6451A4F1)
+        (module "ceoloide:mcu_nice_nano" (layer F.Cu) (tedit 6451A4F1)
           (attr virtual)
           (at 100 69 0)
           (fp_text reference "MCU5" (at 0 -15 0) (layer F.SilkS) hide
@@ -10540,7 +10540,7 @@
 
           
           
-        (module "ceoloide:nice_nano" (layer F.Cu) (tedit 6451A4F1)
+        (module "ceoloide:mcu_nice_nano" (layer F.Cu) (tedit 6451A4F1)
           (attr virtual)
           (at 235 69 0)
           (fp_text reference "MCU6" (at 0 -15 0) (layer F.SilkS) hide
@@ -11293,7 +11293,7 @@
         
     
 
-      (module "ceoloide:nice_view" (layer F.Cu) (tedit 6448AF5B)
+      (module "ceoloide:display_nice_view" (layer F.Cu) (tedit 6448AF5B)
         (at 100 72.5 0)
         (attr virtual)
         (fp_text reference "DISP5" (at 0 20 0) (layer F.SilkS) hide
@@ -11444,7 +11444,7 @@
     (segment (start 105.080 89.200) (end 105.080 87.450) (width 0.25) (layer "B.Cu") (net 95))
     
 
-      (module "ceoloide:nice_view" (layer F.Cu) (tedit 6448AF5B)
+      (module "ceoloide:display_nice_view" (layer F.Cu) (tedit 6448AF5B)
         (at 235 72.5 0)
         (attr virtual)
         (fp_text reference "DISP6" (at 0 20 0) (layer F.SilkS) hide
@@ -11601,6 +11601,9 @@
         (fp_text value "power_switch" (at 0 2.5 0) (layer F.Fab)
           (effects (font (size 1 1) (thickness 0.15)))
         )
+        (fp_text reference "PWR3" (at -3.6 0 -90) (layer F.SilkS) hide
+          (effects (font (size 1 1) (thickness 0.15)))
+        )
     
         (fp_line (start -1.305 -3.35) (end -1.305 3.35) (layer F.Fab) (width 0.1))
         (fp_line (start 1.295 -3.35) (end -1.305 -3.35) (layer F.Fab) (width 0.1))
@@ -11621,9 +11624,6 @@
         (pad 3 smd rect (at -1.735 -2.25 90) (size 0.7 1.5) (layers F.Cu F.Paste F.Mask) )
 
     
-        (fp_text reference "PWR3" (at -3.6 0 -90) (layer F.SilkS) hide
-          (effects (font (size 1 1) (thickness 0.15)))
-        )
         (fp_text user "ON" (at 0 4.5 0) (layer "F.SilkS")
           (effects (font (size 1 1) (thickness 0.15)) (justify top))
         )
@@ -11680,6 +11680,9 @@
         (fp_text value "power_switch" (at 0 2.5 0) (layer F.Fab)
           (effects (font (size 1 1) (thickness 0.15)))
         )
+        (fp_text reference "PWR4" (at -3.6 0 -90) (layer F.SilkS) hide
+          (effects (font (size 1 1) (thickness 0.15)))
+        )
     
         (fp_line (start -1.305 -3.35) (end -1.305 3.35) (layer F.Fab) (width 0.1))
         (fp_line (start 1.295 -3.35) (end -1.305 -3.35) (layer F.Fab) (width 0.1))
@@ -11700,9 +11703,6 @@
         (pad 3 smd rect (at -1.735 -2.25 90) (size 0.7 1.5) (layers F.Cu F.Paste F.Mask) )
 
     
-        (fp_text reference "PWR4" (at -3.6 0 -90) (layer F.SilkS) hide
-          (effects (font (size 1 1) (thickness 0.15)))
-        )
         (fp_text user "ON" (at 0 4.5 0) (layer "F.SilkS")
           (effects (font (size 1 1) (thickness 0.15)) (justify top))
         )
@@ -11759,6 +11759,9 @@
           (fp_text value "reset_button_smd_side" (at 0 2.5 0) (layer F.Fab)
             (effects (font (size 1 1) (thickness 0.15)))
           )
+          (fp_text reference "RST1" (at 0 0 0) (layer F.SilkS) hide
+            (effects (font (size 1 1) (thickness 0.15)))
+          )
           (fp_line (start -2.35 -1.75) (end -2.35 1.75) (width 0.1) (layer "Dwgs.User"))
           (fp_line (start -2.35 -1.75) (end 2.35 -1.75) (width 0.1) (layer "Dwgs.User"))
           (fp_line (start -2.35 1.75) (end 2.35 1.75) (width 0.1) (layer "Dwgs.User"))
@@ -11772,9 +11775,6 @@
         (pad "3" smd rect (at -2.625 -0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 23 "GND"))
         (pad "4" smd rect (at -2.625 0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "RST"))
       
-        (fp_text reference "RST1" (at 0 0 0) (layer F.SilkS) hide
-          (effects (font (size 1 1) (thickness 0.15)))
-        )
         (fp_line (start -2.35 -1.5) (end -2.35 -1.75) (width 0.1) (layer "F.SilkS"))
         (fp_line (start -2.35 1.5) (end -2.35 1.75) (width 0.1) (layer "F.SilkS"))
         (fp_line (start -2.1 -1.75) (end -2.35 -1.75) (width 0.1) (layer "F.SilkS"))
@@ -11810,6 +11810,9 @@
           (fp_text value "reset_button_smd_side" (at 0 2.5 0) (layer F.Fab)
             (effects (font (size 1 1) (thickness 0.15)))
           )
+          (fp_text reference "RST2" (at 0 0 0) (layer F.SilkS) hide
+            (effects (font (size 1 1) (thickness 0.15)))
+          )
           (fp_line (start -2.35 -1.75) (end -2.35 1.75) (width 0.1) (layer "Dwgs.User"))
           (fp_line (start -2.35 -1.75) (end 2.35 -1.75) (width 0.1) (layer "Dwgs.User"))
           (fp_line (start -2.35 1.75) (end 2.35 1.75) (width 0.1) (layer "Dwgs.User"))
@@ -11823,9 +11826,6 @@
         (pad "3" smd rect (at -2.625 -0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 23 "GND"))
         (pad "4" smd rect (at -2.625 0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "RST"))
       
-        (fp_text reference "RST2" (at 0 0 0) (layer F.SilkS) hide
-          (effects (font (size 1 1) (thickness 0.15)))
-        )
         (fp_line (start -2.35 -1.5) (end -2.35 -1.75) (width 0.1) (layer "F.SilkS"))
         (fp_line (start -2.35 1.5) (end -2.35 1.75) (width 0.1) (layer "F.SilkS"))
         (fp_line (start -2.1 -1.75) (end -2.35 -1.75) (width 0.1) (layer "F.SilkS"))
@@ -11861,6 +11861,9 @@
           (fp_text value "reset_button_smd_side" (at 0 2.5 0) (layer F.Fab)
             (effects (font (size 1 1) (thickness 0.15)))
           )
+          (fp_text reference "RST3" (at 0 0 0) (layer F.SilkS) hide
+            (effects (font (size 1 1) (thickness 0.15)))
+          )
           (fp_line (start -2.35 -1.75) (end -2.35 1.75) (width 0.1) (layer "Dwgs.User"))
           (fp_line (start -2.35 -1.75) (end 2.35 -1.75) (width 0.1) (layer "Dwgs.User"))
           (fp_line (start -2.35 1.75) (end 2.35 1.75) (width 0.1) (layer "Dwgs.User"))
@@ -11877,9 +11880,6 @@
         (pad "3" smd rect (at -2.625 -0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 23 "GND"))
         (pad "4" smd rect (at -2.625 0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "RST"))
       
-        (fp_text reference "RST3" (at 0 0 0) (layer F.SilkS) hide
-          (effects (font (size 1 1) (thickness 0.15)))
-        )
         (fp_line (start -2.35 -1.5) (end -2.35 -1.75) (width 0.1) (layer "F.SilkS"))
         (fp_line (start -2.35 1.5) (end -2.35 1.75) (width 0.1) (layer "F.SilkS"))
         (fp_line (start -2.1 -1.75) (end -2.35 -1.75) (width 0.1) (layer "F.SilkS"))
@@ -11915,6 +11915,9 @@
           (fp_text value "reset_button_smd_side" (at 0 2.5 0) (layer F.Fab)
             (effects (font (size 1 1) (thickness 0.15)))
           )
+          (fp_text reference "RST4" (at 0 0 0) (layer F.SilkS) hide
+            (effects (font (size 1 1) (thickness 0.15)))
+          )
           (fp_line (start -2.35 -1.75) (end -2.35 1.75) (width 0.1) (layer "Dwgs.User"))
           (fp_line (start -2.35 -1.75) (end 2.35 -1.75) (width 0.1) (layer "Dwgs.User"))
           (fp_line (start -2.35 1.75) (end 2.35 1.75) (width 0.1) (layer "Dwgs.User"))
@@ -11931,9 +11934,6 @@
         (pad "3" smd rect (at -2.625 -0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 23 "GND"))
         (pad "4" smd rect (at -2.625 0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "RST"))
       
-        (fp_text reference "RST4" (at 0 0 0) (layer F.SilkS) hide
-          (effects (font (size 1 1) (thickness 0.15)))
-        )
         (fp_line (start -2.35 -1.5) (end -2.35 -1.75) (width 0.1) (layer "F.SilkS"))
         (fp_line (start -2.35 1.5) (end -2.35 1.75) (width 0.1) (layer "F.SilkS"))
         (fp_line (start -2.1 -1.75) (end -2.35 -1.75) (width 0.1) (layer "F.SilkS"))

@@ -350,7 +350,7 @@ pcbs:
       # Top of USB-C to top of PCB: 0.9mm
       # 
       nice_nano_1:
-        what: ceoloide/nice_nano
+        what: ceoloide/mcu_nice_nano
         where: /choc_v1_v2_c2_r1/
         params:
           use_rectangular_jumpers: true
@@ -359,7 +359,7 @@ pcbs:
             shift: [3u,-33/2+u/2]
 
       nice_view_1:
-        what: ceoloide/nice_view
+        what: ceoloide/display_nice_view
         where: /choc_v1_v2_c2_r1/
         params:
           MOSI: SDA
@@ -370,7 +370,7 @@ pcbs:
             shift: [3u,-20+u/2]
 
       nice_nano_2:
-        what: ceoloide/nice_nano
+        what: ceoloide/mcu_nice_nano
         where: /choc_v1_v2_c2_r1/
         params:
           use_rectangular_jumpers: false
@@ -379,7 +379,7 @@ pcbs:
             shift: [2u,-33/2+u/2]
       
       nice_view_2:
-        what: ceoloide/nice_view
+        what: ceoloide/display_nice_view
         where: /choc_v1_v2_c2_r1/
         params:
           MOSI: SDA
@@ -427,7 +427,7 @@ pcbs:
           shift: [u + 7.5,-1.5]
 
       nice_nano_3:
-        what: ceoloide/nice_nano
+        what: ceoloide/mcu_nice_nano
         where: /choc_v1_v2_c2_r1/
         params:
           use_rectangular_jumpers: false
@@ -437,7 +437,7 @@ pcbs:
             shift: [u,-33/2+u/2]
       
       nice_view_3:
-        what: ceoloide/nice_view
+        what: ceoloide/display_nice_view
         where: /choc_v1_v2_c2_r1/
         params:
           MOSI: SDA
