@@ -354,7 +354,7 @@ pcbs:
         where: /choc_v1_v2_c2_r1/
         params:
           use_rectangular_jumpers: true
-          show_instructions: false
+          reversible: true
         adjust:
             shift: [3u,-33/2+u/2]
 
@@ -374,7 +374,6 @@ pcbs:
         where: /choc_v1_v2_c2_r1/
         params:
           use_rectangular_jumpers: false
-          show_instructions: false
         adjust:
             shift: [2u,-33/2+u/2]
       
@@ -431,7 +430,6 @@ pcbs:
         where: /choc_v1_v2_c2_r1/
         params:
           use_rectangular_jumpers: false
-          show_instructions: false
           only_required_jumpers: true
         adjust:
             shift: [u,-33/2+u/2]
