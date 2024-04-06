@@ -12764,6 +12764,42 @@
     (segment (start 233.730 110.800) (end 233.730 112.550) (width 0.25) (layer "B.Cu") (net 99))
     (segment (start 231.190 110.800) (end 231.190 112.550) (width 0.25) (layer "B.Cu") (net 98))
     
+
+    (zone
+      (net 23)
+      (net_name "GND")
+      (locked no)
+      (layers "F.Cu")
+      
+      (hatch edge 0.5)
+      
+      (connect_pads 
+        (clearance 0.508)
+      )
+      (min_thickness 0.25)
+      (filled_areas_thickness no)
+      (fill yes
+        (thermal_gap 0.5)
+        (thermal_bridge_width 0.5)
+        (smoothing chamfer)
+        (radius 0.5)
+        (island_removal_mode 1)
+        (island_area_min 5)
+        
+        
+        
+        
+        
+        
+        
+      )
+      (polygon
+        (pts
+          (xy 0 0) (xy 420 0) (xy 420 297) (xy 0 297) 
+        )
+      )
+    )
+    
             (gr_line (start 53 147.5) (end 147 147.5) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 147.5 147) (end 147.5 53) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 147 52.5) (end 53 52.5) (angle 90) (layer Edge.Cuts) (width 0.15))

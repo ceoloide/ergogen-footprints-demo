@@ -536,3 +536,8 @@ pcbs:
             shift: [u,20-u/2]
             rotate: 180
       
+      copper_fill:
+        what: ceoloide/utility_filled_zone
+        params:
+          priority: 1
+      
