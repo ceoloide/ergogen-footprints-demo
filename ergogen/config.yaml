@@ -336,7 +336,7 @@ pcbs:
           shift: [0, 4.7 + 4.4]
       
       jlcpcb_order_number_text:
-        what: ceoloide/text
+        what: ceoloide/utility_text
         where: /choc_v1_v2_c1_r1/
         params:
           text: JLCJLCJLCJLC
