@@ -3356,7 +3356,7 @@
             (thickness 0.15)
             
             )
-             (justify  mirror)
+            (justify  mirror)
           )
       )
 
@@ -3381,7 +3381,7 @@
             (thickness 0.15)
             
             )
-             (justify  mirror)
+            (justify  mirror)
           )
       )
 
