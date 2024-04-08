@@ -536,6 +536,49 @@ pcbs:
             shift: [u,20-u/2]
             rotate: 180
       
+      ergogen_logo_1:
+        what: ceoloide/utility_ergogen_logo
+        where: /choc_v1_v2_c2_r1/
+        params:
+          scale: 1.0
+          reversible: true
+        adjust:
+            shift: [u,-33/2+u/2]
+      
+      ergogen_logo_2:
+        what: ceoloide/utility_ergogen_logo
+        where: /board_center/
+        params:
+          scale: 1.5
+          reversible: true
+      
+      ergogen_logo_3:
+        what: ceoloide/utility_ergogen_logo
+        where: /choc_v1_v2_c2_r5/
+        params:
+          scale: 2.0
+          reversible: true
+        adjust:
+            shift: [u,20-u/2]
+      
+      ergogen_logo_4:
+        what: ceoloide/utility_ergogen_logo
+        where: /choc_v1_v2_c2_r5/
+        params:
+          scale: 2.5
+          reversible: true
+        adjust:
+            shift: [2u,20-u/2]
+      
+      ergogen_logo_5:
+        what: ceoloide/utility_ergogen_logo
+        where: /choc_v1_v2_c2_r5/
+        params:
+          scale: 3.0
+          reversible: true
+        adjust:
+            shift: [3u,20-u/2]
+      
       copper_fill:
         what: ceoloide/utility_filled_zone
         params:
