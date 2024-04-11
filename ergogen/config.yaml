@@ -94,6 +94,7 @@ outlines:
 
 pcbs:
   ergogen_footprints_demo:
+    template: kicad8
     outlines:
       main:
         outline: board_outline
@@ -348,7 +349,6 @@ pcbs:
       # Top of pins to end of USB-C: 3.70mm
       # Top of pins to bottom of PCB: 30.60mm
       # Top of USB-C to top of PCB: 0.9mm
-      # 
       nice_nano_1:
         what: ceoloide/mcu_nice_nano
         where: /choc_v1_v2_c2_r1/
