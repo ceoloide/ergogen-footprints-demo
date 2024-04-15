@@ -355,6 +355,7 @@ pcbs:
         params:
           use_rectangular_jumpers: true
           reversible: true
+          reverse_mount: true
         adjust:
             shift: [3u,-33/2+u/2]
 
@@ -434,6 +435,7 @@ pcbs:
           only_required_jumpers: true
           include_extra_pins: true
           reversible: true
+          reverse_mount: true
         adjust:
             shift: [u,-33/2+u/2]
       

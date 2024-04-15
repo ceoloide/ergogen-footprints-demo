@@ -3831,35 +3831,35 @@
     (pad "124" smd rect (at 4.58 -12.7 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 27 "RAW"))
     (pad "24" smd rect (at 5.48 -12.7 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 51 "MCU1_1"))
         
-    (fp_text user "RAW" (at -3 -12.7 0) (layer "F.SilkS")
+    (fp_text user "P1" (at -3 -12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P1" (at 3 -12.7 0) (layer "F.SilkS")
+    (fp_text user "RAW" (at 3 -12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "RAW" (at -3 -12.7 180) (layer "B.SilkS")
+    (fp_text user "P1" (at -3 -12.7 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P1" (at 3 -12.7 180) (layer "B.SilkS")
+    (fp_text user "RAW" (at 3 -12.7 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P1" (at -3.262 -13.5 0) (layer "F.Fab")
+    (fp_text user "RAW" (at -3.262 -13.5 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "RAW" (at 3.262 -13.5 0) (layer "F.Fab")
+    (fp_text user "P1" (at 3.262 -13.5 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P1" (at -3.262 -13.5 180) (layer "B.Fab")
+    (fp_text user "RAW" (at -3.262 -13.5 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "RAW" (at 3.262 -13.5 180) (layer "B.Fab")
+    (fp_text user "P1" (at 3.262 -13.5 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -3887,35 +3887,35 @@
     (pad "123" smd rect (at 4.58 -10.16 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 23 "GND"))
     (pad "23" smd rect (at 5.48 -10.16 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 53 "MCU1_2"))
         
-    (fp_text user "GND" (at -3 -10.16 0) (layer "F.SilkS")
+    (fp_text user "P0" (at -3 -10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P0" (at 3 -10.16 0) (layer "F.SilkS")
+    (fp_text user "GND" (at 3 -10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "GND" (at -3 -10.16 180) (layer "B.SilkS")
+    (fp_text user "P0" (at -3 -10.16 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P0" (at 3 -10.16 180) (layer "B.SilkS")
+    (fp_text user "GND" (at 3 -10.16 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P0" (at -3.262 -10.96 0) (layer "F.Fab")
+    (fp_text user "GND" (at -3.262 -10.96 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "GND" (at 3.262 -10.96 0) (layer "F.Fab")
+    (fp_text user "P0" (at 3.262 -10.96 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P0" (at -3.262 -10.96 180) (layer "B.Fab")
+    (fp_text user "GND" (at -3.262 -10.96 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "GND" (at 3.262 -10.96 180) (layer "B.Fab")
+    (fp_text user "P0" (at 3.262 -10.96 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -3943,35 +3943,35 @@
     (pad "122" smd rect (at 4.58 -7.619999999999999 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 28 "RST"))
     (pad "22" smd rect (at 5.48 -7.619999999999999 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 55 "MCU1_3"))
         
-    (fp_text user "RST" (at -3 -7.619999999999999 0) (layer "F.SilkS")
+    (fp_text user "GND" (at -3 -7.619999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "GND" (at 3 -7.619999999999999 0) (layer "F.SilkS")
+    (fp_text user "RST" (at 3 -7.619999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "RST" (at -3 -7.619999999999999 180) (layer "B.SilkS")
+    (fp_text user "GND" (at -3 -7.619999999999999 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "GND" (at 3 -7.619999999999999 180) (layer "B.SilkS")
+    (fp_text user "RST" (at 3 -7.619999999999999 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "GND" (at -3.262 -8.42 0) (layer "F.Fab")
+    (fp_text user "RST" (at -3.262 -8.42 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "RST" (at 3.262 -8.42 0) (layer "F.Fab")
+    (fp_text user "GND" (at 3.262 -8.42 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "GND" (at -3.262 -8.42 180) (layer "B.Fab")
+    (fp_text user "RST" (at -3.262 -8.42 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "RST" (at 3.262 -8.42 180) (layer "B.Fab")
+    (fp_text user "GND" (at 3.262 -8.42 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -3999,35 +3999,35 @@
     (pad "121" smd rect (at 4.58 -5.079999999999999 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 21 "VCC"))
     (pad "21" smd rect (at 5.48 -5.079999999999999 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 57 "MCU1_4"))
         
-    (fp_text user "VCC" (at -3 -5.079999999999999 0) (layer "F.SilkS")
+    (fp_text user "GND" (at -3 -5.079999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "GND" (at 3 -5.079999999999999 0) (layer "F.SilkS")
+    (fp_text user "VCC" (at 3 -5.079999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "VCC" (at -3 -5.079999999999999 180) (layer "B.SilkS")
+    (fp_text user "GND" (at -3 -5.079999999999999 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "GND" (at 3 -5.079999999999999 180) (layer "B.SilkS")
+    (fp_text user "VCC" (at 3 -5.079999999999999 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "GND" (at -3.262 -5.88 0) (layer "F.Fab")
+    (fp_text user "VCC" (at -3.262 -5.88 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "VCC" (at 3.262 -5.88 0) (layer "F.Fab")
+    (fp_text user "GND" (at 3.262 -5.88 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "GND" (at -3.262 -5.88 180) (layer "B.Fab")
+    (fp_text user "VCC" (at -3.262 -5.88 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "VCC" (at 3.262 -5.88 180) (layer "B.Fab")
+    (fp_text user "GND" (at 3.262 -5.88 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -4055,35 +4055,35 @@
     (pad "120" smd rect (at 4.58 -2.539999999999999 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 29 "P21"))
     (pad "20" smd rect (at 5.48 -2.539999999999999 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 59 "MCU1_5"))
         
-    (fp_text user "P21" (at -3 -2.539999999999999 0) (layer "F.SilkS")
+    (fp_text user "P2" (at -3 -2.539999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P2" (at 3 -2.539999999999999 0) (layer "F.SilkS")
+    (fp_text user "P21" (at 3 -2.539999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P21" (at -3 -2.539999999999999 180) (layer "B.SilkS")
+    (fp_text user "P2" (at -3 -2.539999999999999 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P2" (at 3 -2.539999999999999 180) (layer "B.SilkS")
+    (fp_text user "P21" (at 3 -2.539999999999999 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P2" (at -3.262 -3.34 0) (layer "F.Fab")
+    (fp_text user "P21" (at -3.262 -3.34 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P21" (at 3.262 -3.34 0) (layer "F.Fab")
+    (fp_text user "P2" (at 3.262 -3.34 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P2" (at -3.262 -3.34 180) (layer "B.Fab")
+    (fp_text user "P21" (at -3.262 -3.34 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P21" (at 3.262 -3.34 180) (layer "B.Fab")
+    (fp_text user "P2" (at 3.262 -3.34 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -4111,35 +4111,35 @@
     (pad "119" smd rect (at 4.58 0 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 30 "P20"))
     (pad "19" smd rect (at 5.48 0 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 61 "MCU1_6"))
         
-    (fp_text user "P20" (at -3 0 0) (layer "F.SilkS")
+    (fp_text user "P3" (at -3 0 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P3" (at 3 0 0) (layer "F.SilkS")
+    (fp_text user "P20" (at 3 0 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P20" (at -3 0 180) (layer "B.SilkS")
+    (fp_text user "P3" (at -3 0 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P3" (at 3 0 180) (layer "B.SilkS")
+    (fp_text user "P20" (at 3 0 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P3" (at -3.262 -0.8000000000000007 0) (layer "F.Fab")
+    (fp_text user "P20" (at -3.262 -0.8000000000000007 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P20" (at 3.262 -0.8000000000000007 0) (layer "F.Fab")
+    (fp_text user "P3" (at 3.262 -0.8000000000000007 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P3" (at -3.262 -0.8000000000000007 180) (layer "B.Fab")
+    (fp_text user "P20" (at -3.262 -0.8000000000000007 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P20" (at 3.262 -0.8000000000000007 180) (layer "B.Fab")
+    (fp_text user "P3" (at 3.262 -0.8000000000000007 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -4167,35 +4167,35 @@
     (pad "118" smd rect (at 4.58 2.540000000000001 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 31 "P19"))
     (pad "18" smd rect (at 5.48 2.540000000000001 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 63 "MCU1_7"))
         
-    (fp_text user "P19" (at -3 2.540000000000001 0) (layer "F.SilkS")
+    (fp_text user "P4" (at -3 2.540000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P4" (at 3 2.540000000000001 0) (layer "F.SilkS")
+    (fp_text user "P19" (at 3 2.540000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P19" (at -3 2.540000000000001 180) (layer "B.SilkS")
+    (fp_text user "P4" (at -3 2.540000000000001 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P4" (at 3 2.540000000000001 180) (layer "B.SilkS")
+    (fp_text user "P19" (at 3 2.540000000000001 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P4" (at -3.262 1.7400000000000002 0) (layer "F.Fab")
+    (fp_text user "P19" (at -3.262 1.7400000000000002 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P19" (at 3.262 1.7400000000000002 0) (layer "F.Fab")
+    (fp_text user "P4" (at 3.262 1.7400000000000002 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P4" (at -3.262 1.7400000000000002 180) (layer "B.Fab")
+    (fp_text user "P19" (at -3.262 1.7400000000000002 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P19" (at 3.262 1.7400000000000002 180) (layer "B.Fab")
+    (fp_text user "P4" (at 3.262 1.7400000000000002 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -4223,35 +4223,35 @@
     (pad "117" smd rect (at 4.58 5.080000000000002 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 32 "P18"))
     (pad "17" smd rect (at 5.48 5.080000000000002 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 65 "MCU1_8"))
         
-    (fp_text user "P18" (at -3 5.080000000000002 0) (layer "F.SilkS")
+    (fp_text user "P5" (at -3 5.080000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P5" (at 3 5.080000000000002 0) (layer "F.SilkS")
+    (fp_text user "P18" (at 3 5.080000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P18" (at -3 5.080000000000002 180) (layer "B.SilkS")
+    (fp_text user "P5" (at -3 5.080000000000002 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P5" (at 3 5.080000000000002 180) (layer "B.SilkS")
+    (fp_text user "P18" (at 3 5.080000000000002 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P5" (at -3.262 4.280000000000001 0) (layer "F.Fab")
+    (fp_text user "P18" (at -3.262 4.280000000000001 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P18" (at 3.262 4.280000000000001 0) (layer "F.Fab")
+    (fp_text user "P5" (at 3.262 4.280000000000001 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P5" (at -3.262 4.280000000000001 180) (layer "B.Fab")
+    (fp_text user "P18" (at -3.262 4.280000000000001 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P18" (at 3.262 4.280000000000001 180) (layer "B.Fab")
+    (fp_text user "P5" (at 3.262 4.280000000000001 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -4279,35 +4279,35 @@
     (pad "116" smd rect (at 4.58 7.620000000000001 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 33 "P15"))
     (pad "16" smd rect (at 5.48 7.620000000000001 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 67 "MCU1_9"))
         
-    (fp_text user "P15" (at -3 7.620000000000001 0) (layer "F.SilkS")
+    (fp_text user "P6" (at -3 7.620000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P6" (at 3 7.620000000000001 0) (layer "F.SilkS")
+    (fp_text user "P15" (at 3 7.620000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P15" (at -3 7.620000000000001 180) (layer "B.SilkS")
+    (fp_text user "P6" (at -3 7.620000000000001 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P6" (at 3 7.620000000000001 180) (layer "B.SilkS")
+    (fp_text user "P15" (at 3 7.620000000000001 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P6" (at -3.262 6.82 0) (layer "F.Fab")
+    (fp_text user "P15" (at -3.262 6.82 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P15" (at 3.262 6.82 0) (layer "F.Fab")
+    (fp_text user "P6" (at 3.262 6.82 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P6" (at -3.262 6.82 180) (layer "B.Fab")
+    (fp_text user "P15" (at -3.262 6.82 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P15" (at 3.262 6.82 180) (layer "B.Fab")
+    (fp_text user "P6" (at 3.262 6.82 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -4335,35 +4335,35 @@
     (pad "115" smd rect (at 4.58 10.16 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 34 "P14"))
     (pad "15" smd rect (at 5.48 10.16 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 69 "MCU1_10"))
         
-    (fp_text user "P14" (at -3 10.16 0) (layer "F.SilkS")
+    (fp_text user "P7" (at -3 10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P7" (at 3 10.16 0) (layer "F.SilkS")
+    (fp_text user "P14" (at 3 10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P14" (at -3 10.16 180) (layer "B.SilkS")
+    (fp_text user "P7" (at -3 10.16 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P7" (at 3 10.16 180) (layer "B.SilkS")
+    (fp_text user "P14" (at 3 10.16 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P7" (at -3.262 9.36 0) (layer "F.Fab")
+    (fp_text user "P14" (at -3.262 9.36 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P14" (at 3.262 9.36 0) (layer "F.Fab")
+    (fp_text user "P7" (at 3.262 9.36 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P7" (at -3.262 9.36 180) (layer "B.Fab")
+    (fp_text user "P14" (at -3.262 9.36 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P14" (at 3.262 9.36 180) (layer "B.Fab")
+    (fp_text user "P7" (at 3.262 9.36 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -4391,35 +4391,35 @@
     (pad "114" smd rect (at 4.58 12.7 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 35 "P16"))
     (pad "14" smd rect (at 5.48 12.7 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 71 "MCU1_11"))
         
-    (fp_text user "P16" (at -3 12.7 0) (layer "F.SilkS")
+    (fp_text user "P8" (at -3 12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P8" (at 3 12.7 0) (layer "F.SilkS")
+    (fp_text user "P16" (at 3 12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P16" (at -3 12.7 180) (layer "B.SilkS")
+    (fp_text user "P8" (at -3 12.7 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P8" (at 3 12.7 180) (layer "B.SilkS")
+    (fp_text user "P16" (at 3 12.7 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P8" (at -3.262 11.899999999999999 0) (layer "F.Fab")
+    (fp_text user "P16" (at -3.262 11.899999999999999 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P16" (at 3.262 11.899999999999999 0) (layer "F.Fab")
+    (fp_text user "P8" (at 3.262 11.899999999999999 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P8" (at -3.262 11.899999999999999 180) (layer "B.Fab")
+    (fp_text user "P16" (at -3.262 11.899999999999999 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P16" (at 3.262 11.899999999999999 180) (layer "B.Fab")
+    (fp_text user "P8" (at 3.262 11.899999999999999 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -4447,35 +4447,35 @@
     (pad "113" smd rect (at 4.58 15.240000000000002 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 36 "P10"))
     (pad "13" smd rect (at 5.48 15.240000000000002 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 73 "MCU1_12"))
         
-    (fp_text user "P10" (at -3 15.240000000000002 0) (layer "F.SilkS")
+    (fp_text user "P9" (at -3 15.240000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P9" (at 3 15.240000000000002 0) (layer "F.SilkS")
+    (fp_text user "P10" (at 3 15.240000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P10" (at -3 15.240000000000002 180) (layer "B.SilkS")
+    (fp_text user "P9" (at -3 15.240000000000002 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P9" (at 3 15.240000000000002 180) (layer "B.SilkS")
+    (fp_text user "P10" (at 3 15.240000000000002 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P9" (at -3.262 14.440000000000001 0) (layer "F.Fab")
+    (fp_text user "P10" (at -3.262 14.440000000000001 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P10" (at 3.262 14.440000000000001 0) (layer "F.Fab")
+    (fp_text user "P9" (at 3.262 14.440000000000001 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P9" (at -3.262 14.440000000000001 180) (layer "B.Fab")
+    (fp_text user "P10" (at -3.262 14.440000000000001 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P10" (at 3.262 14.440000000000001 180) (layer "B.Fab")
+    (fp_text user "P9" (at 3.262 14.440000000000001 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -4487,7 +4487,7 @@
     (fp_line (start -8.95 -14.03) (end -6.29 -14.03) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -8.95 -14.03) (end -8.95 16.57) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -8.95 16.57) (end -6.29 16.57) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
-    (fp_line (start -6.29 -11.43) (end -8.95 -11.43) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start 6.29 -11.43) (end 8.95 -11.43) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
             
     (fp_line (start -6.29 -14.03) (end -8.95 -14.03) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -6.29 -14.03) (end -6.29 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
@@ -4497,15 +4497,15 @@
     (fp_line (start 8.95 -14.03) (end 8.95 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start 8.95 16.57) (end 6.29 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start 6.29 -14.03) (end 6.29 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
-    (fp_line (start 8.95 -11.43) (end 6.29 -11.43) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start -8.95 -11.43) (end -6.29 -11.43) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
           
     
     
     
-    (fp_text user "Right Side Jumpers" (at 0 -15.245 0) (layer "F.SilkS")
+    (fp_text user "R Jumpers, MCU Down" (at 0 -15.245 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user "Left Side Jumpers" (at 0 -15.245 0) (layer "B.SilkS")
+    (fp_text user "L Jumpers, MCU Down" (at 0 -15.245 0) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     
@@ -4805,35 +4805,35 @@
     (pad "124" smd rect (at 4.58 -12.7 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 27 "RAW"))
     (pad "24" smd rect (at 5.48 -12.7 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 75 "MCU2_1"))
         
-    (fp_text user "RAW" (at -3 -12.7 0) (layer "F.SilkS")
+    (fp_text user "P1" (at -3 -12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P1" (at 3 -12.7 0) (layer "F.SilkS")
+    (fp_text user "RAW" (at 3 -12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "RAW" (at -3 -12.7 180) (layer "B.SilkS")
+    (fp_text user "P1" (at -3 -12.7 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P1" (at 3 -12.7 180) (layer "B.SilkS")
+    (fp_text user "RAW" (at 3 -12.7 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P1" (at -3.262 -13.5 0) (layer "F.Fab")
+    (fp_text user "RAW" (at -3.262 -13.5 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "RAW" (at 3.262 -13.5 0) (layer "F.Fab")
+    (fp_text user "P1" (at 3.262 -13.5 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P1" (at -3.262 -13.5 180) (layer "B.Fab")
+    (fp_text user "RAW" (at -3.262 -13.5 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "RAW" (at 3.262 -13.5 180) (layer "B.Fab")
+    (fp_text user "P1" (at 3.262 -13.5 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -4861,35 +4861,35 @@
     (pad "123" smd rect (at 4.58 -10.16 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 23 "GND"))
     (pad "23" smd rect (at 5.48 -10.16 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 77 "MCU2_2"))
         
-    (fp_text user "GND" (at -3 -10.16 0) (layer "F.SilkS")
+    (fp_text user "P0" (at -3 -10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P0" (at 3 -10.16 0) (layer "F.SilkS")
+    (fp_text user "GND" (at 3 -10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "GND" (at -3 -10.16 180) (layer "B.SilkS")
+    (fp_text user "P0" (at -3 -10.16 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P0" (at 3 -10.16 180) (layer "B.SilkS")
+    (fp_text user "GND" (at 3 -10.16 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P0" (at -3.262 -10.96 0) (layer "F.Fab")
+    (fp_text user "GND" (at -3.262 -10.96 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "GND" (at 3.262 -10.96 0) (layer "F.Fab")
+    (fp_text user "P0" (at 3.262 -10.96 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P0" (at -3.262 -10.96 180) (layer "B.Fab")
+    (fp_text user "GND" (at -3.262 -10.96 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "GND" (at 3.262 -10.96 180) (layer "B.Fab")
+    (fp_text user "P0" (at 3.262 -10.96 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -4917,35 +4917,35 @@
     (pad "122" smd rect (at 4.58 -7.619999999999999 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 28 "RST"))
     (pad "22" smd rect (at 5.48 -7.619999999999999 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 79 "MCU2_3"))
         
-    (fp_text user "RST" (at -3 -7.619999999999999 0) (layer "F.SilkS")
+    (fp_text user "GND" (at -3 -7.619999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "GND" (at 3 -7.619999999999999 0) (layer "F.SilkS")
+    (fp_text user "RST" (at 3 -7.619999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "RST" (at -3 -7.619999999999999 180) (layer "B.SilkS")
+    (fp_text user "GND" (at -3 -7.619999999999999 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "GND" (at 3 -7.619999999999999 180) (layer "B.SilkS")
+    (fp_text user "RST" (at 3 -7.619999999999999 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "GND" (at -3.262 -8.42 0) (layer "F.Fab")
+    (fp_text user "RST" (at -3.262 -8.42 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "RST" (at 3.262 -8.42 0) (layer "F.Fab")
+    (fp_text user "GND" (at 3.262 -8.42 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "GND" (at -3.262 -8.42 180) (layer "B.Fab")
+    (fp_text user "RST" (at -3.262 -8.42 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "RST" (at 3.262 -8.42 180) (layer "B.Fab")
+    (fp_text user "GND" (at 3.262 -8.42 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -4973,35 +4973,35 @@
     (pad "121" smd rect (at 4.58 -5.079999999999999 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 21 "VCC"))
     (pad "21" smd rect (at 5.48 -5.079999999999999 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 81 "MCU2_4"))
         
-    (fp_text user "VCC" (at -3 -5.079999999999999 0) (layer "F.SilkS")
+    (fp_text user "GND" (at -3 -5.079999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "GND" (at 3 -5.079999999999999 0) (layer "F.SilkS")
+    (fp_text user "VCC" (at 3 -5.079999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "VCC" (at -3 -5.079999999999999 180) (layer "B.SilkS")
+    (fp_text user "GND" (at -3 -5.079999999999999 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "GND" (at 3 -5.079999999999999 180) (layer "B.SilkS")
+    (fp_text user "VCC" (at 3 -5.079999999999999 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "GND" (at -3.262 -5.88 0) (layer "F.Fab")
+    (fp_text user "VCC" (at -3.262 -5.88 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "VCC" (at 3.262 -5.88 0) (layer "F.Fab")
+    (fp_text user "GND" (at 3.262 -5.88 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "GND" (at -3.262 -5.88 180) (layer "B.Fab")
+    (fp_text user "VCC" (at -3.262 -5.88 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "VCC" (at 3.262 -5.88 180) (layer "B.Fab")
+    (fp_text user "GND" (at 3.262 -5.88 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -5029,35 +5029,35 @@
     (pad "120" smd rect (at 4.58 -2.539999999999999 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 29 "P21"))
     (pad "20" smd rect (at 5.48 -2.539999999999999 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 83 "MCU2_5"))
         
-    (fp_text user "P21" (at -3 -2.539999999999999 0) (layer "F.SilkS")
+    (fp_text user "P2" (at -3 -2.539999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P2" (at 3 -2.539999999999999 0) (layer "F.SilkS")
+    (fp_text user "P21" (at 3 -2.539999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P21" (at -3 -2.539999999999999 180) (layer "B.SilkS")
+    (fp_text user "P2" (at -3 -2.539999999999999 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P2" (at 3 -2.539999999999999 180) (layer "B.SilkS")
+    (fp_text user "P21" (at 3 -2.539999999999999 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P2" (at -3.262 -3.34 0) (layer "F.Fab")
+    (fp_text user "P21" (at -3.262 -3.34 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P21" (at 3.262 -3.34 0) (layer "F.Fab")
+    (fp_text user "P2" (at 3.262 -3.34 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P2" (at -3.262 -3.34 180) (layer "B.Fab")
+    (fp_text user "P21" (at -3.262 -3.34 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P21" (at 3.262 -3.34 180) (layer "B.Fab")
+    (fp_text user "P2" (at 3.262 -3.34 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -5085,35 +5085,35 @@
     (pad "119" smd rect (at 4.58 0 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 30 "P20"))
     (pad "19" smd rect (at 5.48 0 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 85 "MCU2_6"))
         
-    (fp_text user "P20" (at -3 0 0) (layer "F.SilkS")
+    (fp_text user "P3" (at -3 0 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P3" (at 3 0 0) (layer "F.SilkS")
+    (fp_text user "P20" (at 3 0 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P20" (at -3 0 180) (layer "B.SilkS")
+    (fp_text user "P3" (at -3 0 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P3" (at 3 0 180) (layer "B.SilkS")
+    (fp_text user "P20" (at 3 0 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P3" (at -3.262 -0.8000000000000007 0) (layer "F.Fab")
+    (fp_text user "P20" (at -3.262 -0.8000000000000007 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P20" (at 3.262 -0.8000000000000007 0) (layer "F.Fab")
+    (fp_text user "P3" (at 3.262 -0.8000000000000007 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P3" (at -3.262 -0.8000000000000007 180) (layer "B.Fab")
+    (fp_text user "P20" (at -3.262 -0.8000000000000007 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P20" (at 3.262 -0.8000000000000007 180) (layer "B.Fab")
+    (fp_text user "P3" (at 3.262 -0.8000000000000007 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -5141,35 +5141,35 @@
     (pad "118" smd rect (at 4.58 2.540000000000001 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 31 "P19"))
     (pad "18" smd rect (at 5.48 2.540000000000001 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 87 "MCU2_7"))
         
-    (fp_text user "P19" (at -3 2.540000000000001 0) (layer "F.SilkS")
+    (fp_text user "P4" (at -3 2.540000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P4" (at 3 2.540000000000001 0) (layer "F.SilkS")
+    (fp_text user "P19" (at 3 2.540000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P19" (at -3 2.540000000000001 180) (layer "B.SilkS")
+    (fp_text user "P4" (at -3 2.540000000000001 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P4" (at 3 2.540000000000001 180) (layer "B.SilkS")
+    (fp_text user "P19" (at 3 2.540000000000001 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P4" (at -3.262 1.7400000000000002 0) (layer "F.Fab")
+    (fp_text user "P19" (at -3.262 1.7400000000000002 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P19" (at 3.262 1.7400000000000002 0) (layer "F.Fab")
+    (fp_text user "P4" (at 3.262 1.7400000000000002 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P4" (at -3.262 1.7400000000000002 180) (layer "B.Fab")
+    (fp_text user "P19" (at -3.262 1.7400000000000002 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P19" (at 3.262 1.7400000000000002 180) (layer "B.Fab")
+    (fp_text user "P4" (at 3.262 1.7400000000000002 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -5197,35 +5197,35 @@
     (pad "117" smd rect (at 4.58 5.080000000000002 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 32 "P18"))
     (pad "17" smd rect (at 5.48 5.080000000000002 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 89 "MCU2_8"))
         
-    (fp_text user "P18" (at -3 5.080000000000002 0) (layer "F.SilkS")
+    (fp_text user "P5" (at -3 5.080000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P5" (at 3 5.080000000000002 0) (layer "F.SilkS")
+    (fp_text user "P18" (at 3 5.080000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P18" (at -3 5.080000000000002 180) (layer "B.SilkS")
+    (fp_text user "P5" (at -3 5.080000000000002 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P5" (at 3 5.080000000000002 180) (layer "B.SilkS")
+    (fp_text user "P18" (at 3 5.080000000000002 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P5" (at -3.262 4.280000000000001 0) (layer "F.Fab")
+    (fp_text user "P18" (at -3.262 4.280000000000001 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P18" (at 3.262 4.280000000000001 0) (layer "F.Fab")
+    (fp_text user "P5" (at 3.262 4.280000000000001 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P5" (at -3.262 4.280000000000001 180) (layer "B.Fab")
+    (fp_text user "P18" (at -3.262 4.280000000000001 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P18" (at 3.262 4.280000000000001 180) (layer "B.Fab")
+    (fp_text user "P5" (at 3.262 4.280000000000001 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -5253,35 +5253,35 @@
     (pad "116" smd rect (at 4.58 7.620000000000001 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 33 "P15"))
     (pad "16" smd rect (at 5.48 7.620000000000001 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 91 "MCU2_9"))
         
-    (fp_text user "P15" (at -3 7.620000000000001 0) (layer "F.SilkS")
+    (fp_text user "P6" (at -3 7.620000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P6" (at 3 7.620000000000001 0) (layer "F.SilkS")
+    (fp_text user "P15" (at 3 7.620000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P15" (at -3 7.620000000000001 180) (layer "B.SilkS")
+    (fp_text user "P6" (at -3 7.620000000000001 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P6" (at 3 7.620000000000001 180) (layer "B.SilkS")
+    (fp_text user "P15" (at 3 7.620000000000001 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P6" (at -3.262 6.82 0) (layer "F.Fab")
+    (fp_text user "P15" (at -3.262 6.82 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P15" (at 3.262 6.82 0) (layer "F.Fab")
+    (fp_text user "P6" (at 3.262 6.82 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P6" (at -3.262 6.82 180) (layer "B.Fab")
+    (fp_text user "P15" (at -3.262 6.82 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P15" (at 3.262 6.82 180) (layer "B.Fab")
+    (fp_text user "P6" (at 3.262 6.82 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -5309,35 +5309,35 @@
     (pad "115" smd rect (at 4.58 10.16 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 34 "P14"))
     (pad "15" smd rect (at 5.48 10.16 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 93 "MCU2_10"))
         
-    (fp_text user "P14" (at -3 10.16 0) (layer "F.SilkS")
+    (fp_text user "P7" (at -3 10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P7" (at 3 10.16 0) (layer "F.SilkS")
+    (fp_text user "P14" (at 3 10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P14" (at -3 10.16 180) (layer "B.SilkS")
+    (fp_text user "P7" (at -3 10.16 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P7" (at 3 10.16 180) (layer "B.SilkS")
+    (fp_text user "P14" (at 3 10.16 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P7" (at -3.262 9.36 0) (layer "F.Fab")
+    (fp_text user "P14" (at -3.262 9.36 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P14" (at 3.262 9.36 0) (layer "F.Fab")
+    (fp_text user "P7" (at 3.262 9.36 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P7" (at -3.262 9.36 180) (layer "B.Fab")
+    (fp_text user "P14" (at -3.262 9.36 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P14" (at 3.262 9.36 180) (layer "B.Fab")
+    (fp_text user "P7" (at 3.262 9.36 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -5365,35 +5365,35 @@
     (pad "114" smd rect (at 4.58 12.7 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 35 "P16"))
     (pad "14" smd rect (at 5.48 12.7 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 95 "MCU2_11"))
         
-    (fp_text user "P16" (at -3 12.7 0) (layer "F.SilkS")
+    (fp_text user "P8" (at -3 12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P8" (at 3 12.7 0) (layer "F.SilkS")
+    (fp_text user "P16" (at 3 12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P16" (at -3 12.7 180) (layer "B.SilkS")
+    (fp_text user "P8" (at -3 12.7 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P8" (at 3 12.7 180) (layer "B.SilkS")
+    (fp_text user "P16" (at 3 12.7 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P8" (at -3.262 11.899999999999999 0) (layer "F.Fab")
+    (fp_text user "P16" (at -3.262 11.899999999999999 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P16" (at 3.262 11.899999999999999 0) (layer "F.Fab")
+    (fp_text user "P8" (at 3.262 11.899999999999999 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P8" (at -3.262 11.899999999999999 180) (layer "B.Fab")
+    (fp_text user "P16" (at -3.262 11.899999999999999 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P16" (at 3.262 11.899999999999999 180) (layer "B.Fab")
+    (fp_text user "P8" (at 3.262 11.899999999999999 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -5421,35 +5421,35 @@
     (pad "113" smd rect (at 4.58 15.240000000000002 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 36 "P10"))
     (pad "13" smd rect (at 5.48 15.240000000000002 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 97 "MCU2_12"))
         
-    (fp_text user "P10" (at -3 15.240000000000002 0) (layer "F.SilkS")
+    (fp_text user "P9" (at -3 15.240000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P9" (at 3 15.240000000000002 0) (layer "F.SilkS")
+    (fp_text user "P10" (at 3 15.240000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
-    (fp_text user "P10" (at -3 15.240000000000002 180) (layer "B.SilkS")
+    (fp_text user "P9" (at -3 15.240000000000002 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right mirror))
     )
             
-    (fp_text user "P9" (at 3 15.240000000000002 180) (layer "B.SilkS")
+    (fp_text user "P10" (at 3 15.240000000000002 180) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
             
     
-    (fp_text user "P9" (at -3.262 14.440000000000001 0) (layer "F.Fab")
+    (fp_text user "P10" (at -3.262 14.440000000000001 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "P10" (at 3.262 14.440000000000001 0) (layer "F.Fab")
+    (fp_text user "P9" (at 3.262 14.440000000000001 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P9" (at -3.262 14.440000000000001 180) (layer "B.Fab")
+    (fp_text user "P10" (at -3.262 14.440000000000001 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "P10" (at 3.262 14.440000000000001 180) (layer "B.Fab")
+    (fp_text user "P9" (at 3.262 14.440000000000001 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -5461,7 +5461,7 @@
     (fp_line (start -8.95 -14.03) (end -6.29 -14.03) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -8.95 -14.03) (end -8.95 16.57) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -8.95 16.57) (end -6.29 16.57) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
-    (fp_line (start -6.29 -11.43) (end -8.95 -11.43) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start 6.29 -11.43) (end 8.95 -11.43) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
             
     (fp_line (start -6.29 -14.03) (end -8.95 -14.03) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -6.29 -14.03) (end -6.29 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
@@ -5471,15 +5471,15 @@
     (fp_line (start 8.95 -14.03) (end 8.95 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start 8.95 16.57) (end 6.29 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start 6.29 -14.03) (end 6.29 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
-    (fp_line (start 8.95 -11.43) (end 6.29 -11.43) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start -8.95 -11.43) (end -6.29 -11.43) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
           
     
     
     
-    (fp_text user "Right Side Jumpers" (at 0 -15.245 0) (layer "F.SilkS")
+    (fp_text user "R Jumpers, MCU Down" (at 0 -15.245 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user "Left Side Jumpers" (at 0 -15.245 0) (layer "B.SilkS")
+    (fp_text user "L Jumpers, MCU Down" (at 0 -15.245 0) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     
@@ -7354,10 +7354,10 @@
     
     
     
-    (fp_text user "Right Side Jumpers" (at 0 -15.245 0) (layer "F.SilkS")
+    (fp_text user "R Jumpers, MCU Up" (at 0 -15.245 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user "Left Side Jumpers" (at 0 -15.245 0) (layer "B.SilkS")
+    (fp_text user "L Jumpers, MCU Up" (at 0 -15.245 0) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     
@@ -9012,10 +9012,10 @@
     
     
     
-    (fp_text user "Right Side Jumpers" (at 0 -15.245 0) (layer "F.SilkS")
+    (fp_text user "R Jumpers, MCU Up" (at 0 -15.245 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user "Left Side Jumpers" (at 0 -15.245 0) (layer "B.SilkS")
+    (fp_text user "L Jumpers, MCU Up" (at 0 -15.245 0) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     
@@ -10248,27 +10248,27 @@
       ) (width 0) (fill yes))
     ))
         
-    (fp_text user "RAW" (at -3 -12.7 0) (layer "F.SilkS")
+    (fp_text user "P1" (at -3 -12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P1" (at 3 -12.7 0) (layer "F.SilkS")
+    (fp_text user "RAW" (at 3 -12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (fp_text user "P1" (at -3.262 -13.5 0) (layer "F.Fab")
+    (fp_text user "RAW" (at -3.262 -13.5 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "RAW" (at 3.262 -13.5 0) (layer "F.Fab")
+    (fp_text user "P1" (at 3.262 -13.5 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P1" (at -3.262 -13.5 180) (layer "B.Fab")
+    (fp_text user "RAW" (at -3.262 -13.5 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "RAW" (at 3.262 -13.5 180) (layer "B.Fab")
+    (fp_text user "P1" (at 3.262 -13.5 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -10353,27 +10353,27 @@
       ) (width 0) (fill yes))
     ))
         
-    (fp_text user "GND" (at -3 -10.16 0) (layer "F.SilkS")
+    (fp_text user "P0" (at -3 -10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P0" (at 3 -10.16 0) (layer "F.SilkS")
+    (fp_text user "GND" (at 3 -10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (fp_text user "P0" (at -3.262 -10.96 0) (layer "F.Fab")
+    (fp_text user "GND" (at -3.262 -10.96 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "GND" (at 3.262 -10.96 0) (layer "F.Fab")
+    (fp_text user "P0" (at 3.262 -10.96 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P0" (at -3.262 -10.96 180) (layer "B.Fab")
+    (fp_text user "GND" (at -3.262 -10.96 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "GND" (at 3.262 -10.96 180) (layer "B.Fab")
+    (fp_text user "P0" (at 3.262 -10.96 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -10458,27 +10458,27 @@
       ) (width 0) (fill yes))
     ))
         
-    (fp_text user "RST" (at -3 -7.619999999999999 0) (layer "F.SilkS")
+    (fp_text user "GND" (at -3 -7.619999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "GND" (at 3 -7.619999999999999 0) (layer "F.SilkS")
+    (fp_text user "RST" (at 3 -7.619999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (fp_text user "GND" (at -3.262 -8.42 0) (layer "F.Fab")
+    (fp_text user "RST" (at -3.262 -8.42 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "RST" (at 3.262 -8.42 0) (layer "F.Fab")
+    (fp_text user "GND" (at 3.262 -8.42 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "GND" (at -3.262 -8.42 180) (layer "B.Fab")
+    (fp_text user "RST" (at -3.262 -8.42 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "RST" (at 3.262 -8.42 180) (layer "B.Fab")
+    (fp_text user "GND" (at 3.262 -8.42 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -10563,115 +10563,115 @@
       ) (width 0) (fill yes))
     ))
         
-    (fp_text user "VCC" (at -3 -5.079999999999999 0) (layer "F.SilkS")
+    (fp_text user "GND" (at -3 -5.079999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "GND" (at 3 -5.079999999999999 0) (layer "F.SilkS")
+    (fp_text user "VCC" (at 3 -5.079999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (fp_text user "GND" (at -3.262 -5.88 0) (layer "F.Fab")
+    (fp_text user "VCC" (at -3.262 -5.88 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "VCC" (at 3.262 -5.88 0) (layer "F.Fab")
+    (fp_text user "GND" (at 3.262 -5.88 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "GND" (at -3.262 -5.88 180) (layer "B.Fab")
+    (fp_text user "VCC" (at -3.262 -5.88 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "VCC" (at 3.262 -5.88 180) (layer "B.Fab")
+    (fp_text user "GND" (at 3.262 -5.88 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
     
-    (pad "20" thru_hole circle (at -7.62 -2.539999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 39 "P2"))
-    (pad "5" thru_hole circle (at 7.62 -2.539999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 29 "P21"))
+    (pad "20" thru_hole circle (at -7.62 -2.539999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 29 "P21"))
+    (pad "5" thru_hole circle (at 7.62 -2.539999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 39 "P2"))
       
-    (fp_text user "P2" (at -6 -2.539999999999999 0) (layer "F.SilkS")
+    (fp_text user "P21" (at -6 -2.539999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P21" (at 6 -2.539999999999999 0) (layer "F.SilkS")
+    (fp_text user "P2" (at 6 -2.539999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (pad "19" thru_hole circle (at -7.62 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 40 "P3"))
-    (pad "6" thru_hole circle (at 7.62 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 30 "P20"))
+    (pad "19" thru_hole circle (at -7.62 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 30 "P20"))
+    (pad "6" thru_hole circle (at 7.62 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 40 "P3"))
       
-    (fp_text user "P3" (at -6 0 0) (layer "F.SilkS")
+    (fp_text user "P20" (at -6 0 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P20" (at 6 0 0) (layer "F.SilkS")
+    (fp_text user "P3" (at 6 0 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (pad "18" thru_hole circle (at -7.62 2.540000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 41 "P4"))
-    (pad "7" thru_hole circle (at 7.62 2.540000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 31 "P19"))
+    (pad "18" thru_hole circle (at -7.62 2.540000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 31 "P19"))
+    (pad "7" thru_hole circle (at 7.62 2.540000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 41 "P4"))
       
-    (fp_text user "P4" (at -6 2.540000000000001 0) (layer "F.SilkS")
+    (fp_text user "P19" (at -6 2.540000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P19" (at 6 2.540000000000001 0) (layer "F.SilkS")
+    (fp_text user "P4" (at 6 2.540000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (pad "17" thru_hole circle (at -7.62 5.080000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 42 "P5"))
-    (pad "8" thru_hole circle (at 7.62 5.080000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 32 "P18"))
+    (pad "17" thru_hole circle (at -7.62 5.080000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 32 "P18"))
+    (pad "8" thru_hole circle (at 7.62 5.080000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 42 "P5"))
       
-    (fp_text user "P5" (at -6 5.080000000000002 0) (layer "F.SilkS")
+    (fp_text user "P18" (at -6 5.080000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P18" (at 6 5.080000000000002 0) (layer "F.SilkS")
+    (fp_text user "P5" (at 6 5.080000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (pad "16" thru_hole circle (at -7.62 7.620000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 43 "P6"))
-    (pad "9" thru_hole circle (at 7.62 7.620000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 33 "P15"))
+    (pad "16" thru_hole circle (at -7.62 7.620000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 33 "P15"))
+    (pad "9" thru_hole circle (at 7.62 7.620000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 43 "P6"))
       
-    (fp_text user "P6" (at -6 7.620000000000001 0) (layer "F.SilkS")
+    (fp_text user "P15" (at -6 7.620000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P15" (at 6 7.620000000000001 0) (layer "F.SilkS")
+    (fp_text user "P6" (at 6 7.620000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (pad "15" thru_hole circle (at -7.62 10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 44 "P7"))
-    (pad "10" thru_hole circle (at 7.62 10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 34 "P14"))
+    (pad "15" thru_hole circle (at -7.62 10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 34 "P14"))
+    (pad "10" thru_hole circle (at 7.62 10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 44 "P7"))
       
-    (fp_text user "P7" (at -6 10.16 0) (layer "F.SilkS")
+    (fp_text user "P14" (at -6 10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P14" (at 6 10.16 0) (layer "F.SilkS")
+    (fp_text user "P7" (at 6 10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (pad "14" thru_hole circle (at -7.62 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 45 "P8"))
-    (pad "11" thru_hole circle (at 7.62 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 35 "P16"))
+    (pad "14" thru_hole circle (at -7.62 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 35 "P16"))
+    (pad "11" thru_hole circle (at 7.62 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 45 "P8"))
       
     
-    (pad "13" thru_hole circle (at -7.62 15.240000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 46 "P9"))
-    (pad "12" thru_hole circle (at 7.62 15.240000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 36 "P10"))
+    (pad "13" thru_hole circle (at -7.62 15.240000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 36 "P10"))
+    (pad "12" thru_hole circle (at 7.62 15.240000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 46 "P9"))
       
-    (fp_text user "P9" (at -6 15.240000000000002 0) (layer "F.SilkS")
+    (fp_text user "P10" (at -6 15.240000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P10" (at 6 15.240000000000002 0) (layer "F.SilkS")
+    (fp_text user "P9" (at 6 15.240000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
@@ -10683,7 +10683,7 @@
     (fp_line (start -8.95 -14.03) (end -6.29 -14.03) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -8.95 -14.03) (end -8.95 16.57) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -8.95 16.57) (end -6.29 16.57) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
-    (fp_line (start -6.29 -11.43) (end -8.95 -11.43) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start 6.29 -11.43) (end 8.95 -11.43) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
             
     (fp_line (start -6.29 -14.03) (end -8.95 -14.03) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -6.29 -14.03) (end -6.29 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
@@ -10693,22 +10693,22 @@
     (fp_line (start 8.95 -14.03) (end 8.95 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start 8.95 16.57) (end 6.29 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start 6.29 -14.03) (end 6.29 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
-    (fp_line (start 8.95 -11.43) (end 6.29 -11.43) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start -8.95 -11.43) (end -6.29 -11.43) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
           
     
-    (pad "25" thru_hole circle (at -5.08 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 47 "P101"))
-    (pad "26" thru_hole circle (at -2.54 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 48 "P102"))
+    (pad "25" thru_hole circle (at 5.08 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 47 "P101"))
+    (pad "26" thru_hole circle (at 2.54 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 48 "P102"))
     (pad "27" thru_hole circle (at 0 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 49 "P107"))
     
     
-    (pad "28" thru_hole circle (at 5.08 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 47 "P101"))
-    (pad "29" thru_hole circle (at 2.54 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 48 "P102"))
+    (pad "28" thru_hole circle (at -5.08 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 47 "P101"))
+    (pad "29" thru_hole circle (at -2.54 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 48 "P102"))
     
     
-    (fp_text user "Right Side Jumpers" (at 0 -15.245 0) (layer "F.SilkS")
+    (fp_text user "R Jumpers, MCU Down" (at 0 -15.245 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user "Left Side Jumpers" (at 0 -15.245 0) (layer "B.SilkS")
+    (fp_text user "L Jumpers, MCU Down" (at 0 -15.245 0) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     
@@ -10905,27 +10905,27 @@
       ) (width 0) (fill yes))
     ))
         
-    (fp_text user "RAW" (at -3 -12.7 0) (layer "F.SilkS")
+    (fp_text user "P1" (at -3 -12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P1" (at 3 -12.7 0) (layer "F.SilkS")
+    (fp_text user "RAW" (at 3 -12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (fp_text user "P1" (at -3.262 -13.5 0) (layer "F.Fab")
+    (fp_text user "RAW" (at -3.262 -13.5 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "RAW" (at 3.262 -13.5 0) (layer "F.Fab")
+    (fp_text user "P1" (at 3.262 -13.5 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P1" (at -3.262 -13.5 180) (layer "B.Fab")
+    (fp_text user "RAW" (at -3.262 -13.5 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "RAW" (at 3.262 -13.5 180) (layer "B.Fab")
+    (fp_text user "P1" (at 3.262 -13.5 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -11010,27 +11010,27 @@
       ) (width 0) (fill yes))
     ))
         
-    (fp_text user "GND" (at -3 -10.16 0) (layer "F.SilkS")
+    (fp_text user "P0" (at -3 -10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P0" (at 3 -10.16 0) (layer "F.SilkS")
+    (fp_text user "GND" (at 3 -10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (fp_text user "P0" (at -3.262 -10.96 0) (layer "F.Fab")
+    (fp_text user "GND" (at -3.262 -10.96 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "GND" (at 3.262 -10.96 0) (layer "F.Fab")
+    (fp_text user "P0" (at 3.262 -10.96 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "P0" (at -3.262 -10.96 180) (layer "B.Fab")
+    (fp_text user "GND" (at -3.262 -10.96 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "GND" (at 3.262 -10.96 180) (layer "B.Fab")
+    (fp_text user "P0" (at 3.262 -10.96 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -11115,27 +11115,27 @@
       ) (width 0) (fill yes))
     ))
         
-    (fp_text user "RST" (at -3 -7.619999999999999 0) (layer "F.SilkS")
+    (fp_text user "GND" (at -3 -7.619999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "GND" (at 3 -7.619999999999999 0) (layer "F.SilkS")
+    (fp_text user "RST" (at 3 -7.619999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (fp_text user "GND" (at -3.262 -8.42 0) (layer "F.Fab")
+    (fp_text user "RST" (at -3.262 -8.42 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "RST" (at 3.262 -8.42 0) (layer "F.Fab")
+    (fp_text user "GND" (at 3.262 -8.42 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "GND" (at -3.262 -8.42 180) (layer "B.Fab")
+    (fp_text user "RST" (at -3.262 -8.42 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "RST" (at 3.262 -8.42 180) (layer "B.Fab")
+    (fp_text user "GND" (at 3.262 -8.42 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
@@ -11220,115 +11220,115 @@
       ) (width 0) (fill yes))
     ))
         
-    (fp_text user "VCC" (at -3 -5.079999999999999 0) (layer "F.SilkS")
+    (fp_text user "GND" (at -3 -5.079999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "GND" (at 3 -5.079999999999999 0) (layer "F.SilkS")
+    (fp_text user "VCC" (at 3 -5.079999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (fp_text user "GND" (at -3.262 -5.88 0) (layer "F.Fab")
+    (fp_text user "VCC" (at -3.262 -5.88 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
-    (fp_text user "VCC" (at 3.262 -5.88 0) (layer "F.Fab")
+    (fp_text user "GND" (at 3.262 -5.88 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
 
     
-    (fp_text user "GND" (at -3.262 -5.88 180) (layer "B.Fab")
+    (fp_text user "VCC" (at -3.262 -5.88 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
-    (fp_text user "VCC" (at 3.262 -5.88 180) (layer "B.Fab")
+    (fp_text user "GND" (at 3.262 -5.88 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
           
     
-    (pad "20" thru_hole circle (at -7.62 -2.539999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 39 "P2"))
-    (pad "5" thru_hole circle (at 7.62 -2.539999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 29 "P21"))
+    (pad "20" thru_hole circle (at -7.62 -2.539999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 29 "P21"))
+    (pad "5" thru_hole circle (at 7.62 -2.539999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 39 "P2"))
       
-    (fp_text user "P2" (at -6 -2.539999999999999 0) (layer "F.SilkS")
+    (fp_text user "P21" (at -6 -2.539999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P21" (at 6 -2.539999999999999 0) (layer "F.SilkS")
+    (fp_text user "P2" (at 6 -2.539999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (pad "19" thru_hole circle (at -7.62 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 40 "P3"))
-    (pad "6" thru_hole circle (at 7.62 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 30 "P20"))
+    (pad "19" thru_hole circle (at -7.62 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 30 "P20"))
+    (pad "6" thru_hole circle (at 7.62 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 40 "P3"))
       
-    (fp_text user "P3" (at -6 0 0) (layer "F.SilkS")
+    (fp_text user "P20" (at -6 0 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P20" (at 6 0 0) (layer "F.SilkS")
+    (fp_text user "P3" (at 6 0 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (pad "18" thru_hole circle (at -7.62 2.540000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 41 "P4"))
-    (pad "7" thru_hole circle (at 7.62 2.540000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 31 "P19"))
+    (pad "18" thru_hole circle (at -7.62 2.540000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 31 "P19"))
+    (pad "7" thru_hole circle (at 7.62 2.540000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 41 "P4"))
       
-    (fp_text user "P4" (at -6 2.540000000000001 0) (layer "F.SilkS")
+    (fp_text user "P19" (at -6 2.540000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P19" (at 6 2.540000000000001 0) (layer "F.SilkS")
+    (fp_text user "P4" (at 6 2.540000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (pad "17" thru_hole circle (at -7.62 5.080000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 42 "P5"))
-    (pad "8" thru_hole circle (at 7.62 5.080000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 32 "P18"))
+    (pad "17" thru_hole circle (at -7.62 5.080000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 32 "P18"))
+    (pad "8" thru_hole circle (at 7.62 5.080000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 42 "P5"))
       
-    (fp_text user "P5" (at -6 5.080000000000002 0) (layer "F.SilkS")
+    (fp_text user "P18" (at -6 5.080000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P18" (at 6 5.080000000000002 0) (layer "F.SilkS")
+    (fp_text user "P5" (at 6 5.080000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (pad "16" thru_hole circle (at -7.62 7.620000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 43 "P6"))
-    (pad "9" thru_hole circle (at 7.62 7.620000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 33 "P15"))
+    (pad "16" thru_hole circle (at -7.62 7.620000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 33 "P15"))
+    (pad "9" thru_hole circle (at 7.62 7.620000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 43 "P6"))
       
-    (fp_text user "P6" (at -6 7.620000000000001 0) (layer "F.SilkS")
+    (fp_text user "P15" (at -6 7.620000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P15" (at 6 7.620000000000001 0) (layer "F.SilkS")
+    (fp_text user "P6" (at 6 7.620000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (pad "15" thru_hole circle (at -7.62 10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 44 "P7"))
-    (pad "10" thru_hole circle (at 7.62 10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 34 "P14"))
+    (pad "15" thru_hole circle (at -7.62 10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 34 "P14"))
+    (pad "10" thru_hole circle (at 7.62 10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 44 "P7"))
       
-    (fp_text user "P7" (at -6 10.16 0) (layer "F.SilkS")
+    (fp_text user "P14" (at -6 10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P14" (at 6 10.16 0) (layer "F.SilkS")
+    (fp_text user "P7" (at 6 10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
     
-    (pad "14" thru_hole circle (at -7.62 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 45 "P8"))
-    (pad "11" thru_hole circle (at 7.62 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 35 "P16"))
+    (pad "14" thru_hole circle (at -7.62 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 35 "P16"))
+    (pad "11" thru_hole circle (at 7.62 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 45 "P8"))
       
     
-    (pad "13" thru_hole circle (at -7.62 15.240000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 46 "P9"))
-    (pad "12" thru_hole circle (at 7.62 15.240000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 36 "P10"))
+    (pad "13" thru_hole circle (at -7.62 15.240000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 36 "P10"))
+    (pad "12" thru_hole circle (at 7.62 15.240000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 46 "P9"))
       
-    (fp_text user "P9" (at -6 15.240000000000002 0) (layer "F.SilkS")
+    (fp_text user "P10" (at -6 15.240000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     )
             
-    (fp_text user "P10" (at 6 15.240000000000002 0) (layer "F.SilkS")
+    (fp_text user "P9" (at 6 15.240000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
             
@@ -11340,7 +11340,7 @@
     (fp_line (start -8.95 -14.03) (end -6.29 -14.03) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -8.95 -14.03) (end -8.95 16.57) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -8.95 16.57) (end -6.29 16.57) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
-    (fp_line (start -6.29 -11.43) (end -8.95 -11.43) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start 6.29 -11.43) (end 8.95 -11.43) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
             
     (fp_line (start -6.29 -14.03) (end -8.95 -14.03) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -6.29 -14.03) (end -6.29 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
@@ -11350,22 +11350,22 @@
     (fp_line (start 8.95 -14.03) (end 8.95 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start 8.95 16.57) (end 6.29 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start 6.29 -14.03) (end 6.29 16.57) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
-    (fp_line (start 8.95 -11.43) (end 6.29 -11.43) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start -8.95 -11.43) (end -6.29 -11.43) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
           
     
-    (pad "25" thru_hole circle (at -5.08 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 47 "P101"))
-    (pad "26" thru_hole circle (at -2.54 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 48 "P102"))
+    (pad "25" thru_hole circle (at 5.08 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 47 "P101"))
+    (pad "26" thru_hole circle (at 2.54 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 48 "P102"))
     (pad "27" thru_hole circle (at 0 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 49 "P107"))
     
     
-    (pad "28" thru_hole circle (at 5.08 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 47 "P101"))
-    (pad "29" thru_hole circle (at 2.54 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 48 "P102"))
+    (pad "28" thru_hole circle (at -5.08 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 47 "P101"))
+    (pad "29" thru_hole circle (at -2.54 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 48 "P102"))
     
     
-    (fp_text user "Right Side Jumpers" (at 0 -15.245 0) (layer "F.SilkS")
+    (fp_text user "R Jumpers, MCU Down" (at 0 -15.245 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user "Left Side Jumpers" (at 0 -15.245 0) (layer "B.SilkS")
+    (fp_text user "L Jumpers, MCU Down" (at 0 -15.245 0) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     
