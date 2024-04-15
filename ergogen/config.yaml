@@ -288,7 +288,7 @@ pcbs:
         what: ceoloide/mounting_hole_npth
         where: /choc_v1_v2_c2_r[1-4]/
         params:
-          hole_size: spacer_diameter
+          hole_size: spacer_diameter + 0.8
           hole_drill: spacer_diameter
         adjust:
           shift: [-u / 2,-u / 2]
@@ -584,3 +584,17 @@ pcbs:
         params:
           priority: 1
       
+      mounting_hole_plated_1:
+        what: ceoloide/mounting_hole_plated
+        where: /choc_v1_v2_c2_r3/
+        adjust:
+          shift: [0.5u, 0.5u]
+      
+      mounting_hole_plated_2:
+        what: ceoloide/mounting_hole_plated
+        where: /choc_v1_v2_c2_r4/
+        params:
+          drill_y: 4.4
+        adjust:
+          shift: [0.5u, 0.5u]
+          rotate: 90
