@@ -13611,6 +13611,44 @@
     
   )
     
+
+  (footprint "ceoloide:utility_point_debugger"
+    (layer "F.Cu")
+    (at 100 100 0)
+    (property "Reference" "P1"
+      (at 0 2)
+      (layer "Dwgs.User")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start -0.6 0) (end 0.6 0) (layer "Dwgs.User") (stroke (width 0.05) (type solid)))
+    (fp_line (start 0 -0.6) (end 0 0.6) (layer "Dwgs.User") (stroke (width 0.05) (type solid)))
+    (fp_line (start 0.6 0) (end 0.5 -0.1) (layer "Dwgs.User") (stroke (width 0.05) (type solid)))
+    (fp_line (start 0.6 0) (end 0.5 0.1) (layer "Dwgs.User") (stroke (width 0.05) (type solid)))
+    (fp_line (start 0 -0.6) (end 0.1 -0.5) (layer "Dwgs.User") (stroke (width 0.05) (type solid)))
+    (fp_line (start 0 -0.6) (end -0.1 -0.5) (layer "Dwgs.User") (stroke (width 0.05) (type solid)))
+      
+  )
+      
+
+  (footprint "ceoloide:utility_point_debugger"
+    (layer "F.Cu")
+    (at 235 100 0)
+    (property "Reference" "P2"
+      (at 0 2)
+      (layer "Dwgs.User")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start -0.6 0) (end 0.6 0) (layer "Dwgs.User") (stroke (width 0.05) (type solid)))
+    (fp_line (start 0 -0.6) (end 0 0.6) (layer "Dwgs.User") (stroke (width 0.05) (type solid)))
+    (fp_line (start 0.6 0) (end 0.5 -0.1) (layer "Dwgs.User") (stroke (width 0.05) (type solid)))
+    (fp_line (start 0.6 0) (end 0.5 0.1) (layer "Dwgs.User") (stroke (width 0.05) (type solid)))
+    (fp_line (start 0 -0.6) (end 0.1 -0.5) (layer "Dwgs.User") (stroke (width 0.05) (type solid)))
+    (fp_line (start 0 -0.6) (end -0.1 -0.5) (layer "Dwgs.User") (stroke (width 0.05) (type solid)))
+      
+  )
+      
   (gr_line (start 53 147.5) (end 147 147.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 147.5 147) (end 147.5 53) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 147 52.5) (end 53 52.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))

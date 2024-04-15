@@ -603,3 +603,9 @@ pcbs:
         adjust:
           shift: [0.5u, 0.5u]
           rotate: 90
+
+      point_debugger:
+        what: ceoloide/utility_point_debugger
+        where: /board_center/
+        params:
+          enabled: true
