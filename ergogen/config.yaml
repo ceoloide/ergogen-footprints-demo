@@ -556,6 +556,8 @@ pcbs:
         params:
           scale: 1.5
           reversible: true
+        adjust:
+          shift: [0,5]
       
       ergogen_logo_3:
         what: ceoloide/utility_ergogen_logo
@@ -609,3 +611,12 @@ pcbs:
         where: /board_center/
         params:
           enabled: true
+
+      molex_pico_ezmate_1:
+        what: ceoloide/battery_connector_molex_pico_ezmate_1x02
+        where: /board_center/
+        params:
+          reversible: true
+        adjust:
+          shift: [1, -5]
+          rotate: -90
