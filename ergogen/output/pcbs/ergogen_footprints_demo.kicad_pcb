@@ -350,16 +350,16 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
-    (pad "" thru_hole circle (at 5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at 5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 4 "D2"))
     
-    (pad "" thru_hole circle (at -5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at -5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 3 "D1"))
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -382,28 +382,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 0 ""))
     
     
-    (pad "1" connect custom (at 3.275 -5.95 180) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 1.3) (xy 0.05 1.3) (xy 1.3 0.25) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 1 "c1_r1"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "1" smd roundrect (at -8.2475 -3.75 180) (size 2.6 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 0 ""))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "c1_r1"))
     
     
     
@@ -426,28 +413,15 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 1 "c1_r1"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "2" smd roundrect (at 7.2475 -3.75 180) (size 3 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 1 "c1_r1"))
+    (pad "2" smd roundrect (at 7.8475 -3.75 180) (size 1.8 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.11944444444444445) (net 1 "c1_r1"))
     
-    (pad "1" smd custom (at -3.275 -5.95 180) (size 1 1) (layers "B.Cu" "B.Paste" "B.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 0.25) (xy -0.05 1.3) (xy 1.3 1.3) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
-    
-
-    
-    (pad "2" smd rect (at 7.875 -3.75 180) (size 1.8 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 1 "c1_r1"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
@@ -466,16 +440,16 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 -180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
-    (pad "" thru_hole circle (at 5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at 5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 4 "D2"))
     
-    (pad "" thru_hole circle (at -5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at -5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 3 "D1"))
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 -180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 -180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -498,28 +472,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 15) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 15) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 0 ""))
     
     
-    (pad "1" connect custom (at 3.275 -5.95 -180) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 1.3) (xy 0.05 1.3) (xy 1.3 0.25) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 -180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 5 "mirror_c1_r1"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 -180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "1" smd roundrect (at -8.2475 -3.75 -180) (size 2.6 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 0 ""))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 -180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 5 "mirror_c1_r1"))
     
     
     
@@ -542,28 +503,15 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 15) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 5 "mirror_c1_r1"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 -180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "2" smd roundrect (at 7.2475 -3.75 -180) (size 3 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 5 "mirror_c1_r1"))
+    (pad "2" smd roundrect (at 7.8475 -3.75 -180) (size 1.8 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.11944444444444445) (net 5 "mirror_c1_r1"))
     
-    (pad "1" smd custom (at -3.275 -5.95 -180) (size 1 1) (layers "B.Cu" "B.Paste" "B.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 0.25) (xy -0.05 1.3) (xy 1.3 1.3) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
-    
-
-    
-    (pad "2" smd rect (at 7.875 -3.75 -180) (size 1.8 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 5 "mirror_c1_r1"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 15) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
@@ -582,16 +530,16 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
-    (pad "" thru_hole oval (at 5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole oval (at 5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") (net 4 "D2"))
     
-    (pad "" thru_hole oval (at -5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole oval (at -5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") (net 3 "D1"))
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -614,28 +562,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 0 ""))
     
     
-    (pad "1" connect custom (at 3.275 -5.95 180) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 1.3) (xy 0.05 1.3) (xy 1.3 0.25) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 6 "c1_r2"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "1" smd roundrect (at -8.2475 -3.75 180) (size 2.6 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 0 ""))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 6 "c1_r2"))
     
     
     
@@ -658,28 +593,15 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 6 "c1_r2"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "2" smd roundrect (at 7.2475 -3.75 180) (size 3 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 6 "c1_r2"))
+    (pad "2" smd roundrect (at 7.8475 -3.75 180) (size 1.8 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.11944444444444445) (net 6 "c1_r2"))
     
-    (pad "1" smd custom (at -3.275 -5.95 180) (size 1 1) (layers "B.Cu" "B.Paste" "B.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 0.25) (xy -0.05 1.3) (xy 1.3 1.3) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
-    
-
-    
-    (pad "2" smd rect (at 7.875 -3.75 180) (size 1.8 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 6 "c1_r2"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
@@ -698,16 +620,16 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 -180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
-    (pad "" thru_hole oval (at 5 5.15 -180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole oval (at 5 5.15 -180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") (net 4 "D2"))
     
-    (pad "" thru_hole oval (at -5 5.15 -180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole oval (at -5 5.15 -180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") (net 3 "D1"))
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 -180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 -180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -730,28 +652,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 15) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 15) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 0 ""))
     
     
-    (pad "1" connect custom (at 3.275 -5.95 -180) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 1.3) (xy 0.05 1.3) (xy 1.3 0.25) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 -180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 7 "mirror_c1_r2"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 -180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "1" smd roundrect (at -8.2475 -3.75 -180) (size 2.6 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 0 ""))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 -180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 7 "mirror_c1_r2"))
     
     
     
@@ -774,28 +683,15 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 15) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 7 "mirror_c1_r2"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 -180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "2" smd roundrect (at 7.2475 -3.75 -180) (size 3 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 7 "mirror_c1_r2"))
+    (pad "2" smd roundrect (at 7.8475 -3.75 -180) (size 1.8 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.11944444444444445) (net 7 "mirror_c1_r2"))
     
-    (pad "1" smd custom (at -3.275 -5.95 -180) (size 1 1) (layers "B.Cu" "B.Paste" "B.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 0.25) (xy -0.05 1.3) (xy 1.3 1.3) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
-    
-
-    
-    (pad "2" smd rect (at 7.875 -3.75 -180) (size 1.8 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 7 "mirror_c1_r2"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 15) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
@@ -814,17 +710,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 180) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 180) (size 3.7 3.7) (drill 3.4) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 5.5 0 180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at -5.5 0 180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -847,28 +743,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 0 ""))
     
     
-    (pad "1" connect custom (at 3.275 -5.95 180) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 1.3) (xy 0.05 1.3) (xy 1.3 0.25) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 8 "c1_r3"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "1" smd roundrect (at -8.2475 -3.75 180) (size 2.6 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 0 ""))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 8 "c1_r3"))
     
     
     
@@ -891,28 +774,15 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 8 "c1_r3"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "2" smd roundrect (at 7.2475 -3.75 180) (size 3 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 8 "c1_r3"))
+    (pad "2" smd roundrect (at 7.8475 -3.75 180) (size 1.8 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.11944444444444445) (net 8 "c1_r3"))
     
-    (pad "1" smd custom (at -3.275 -5.95 180) (size 1 1) (layers "B.Cu" "B.Paste" "B.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 0.25) (xy -0.05 1.3) (xy 1.3 1.3) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
-    
-
-    
-    (pad "2" smd rect (at 7.875 -3.75 180) (size 1.8 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 8 "c1_r3"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
@@ -931,17 +801,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -180) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 -180) (size 3.7 3.7) (drill 3.4) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 -180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 5.5 0 -180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at -5.5 0 -180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 -180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 -180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -964,28 +834,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 15) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 15) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 0 ""))
     
     
-    (pad "1" connect custom (at 3.275 -5.95 -180) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 1.3) (xy 0.05 1.3) (xy 1.3 0.25) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 -180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 9 "mirror_c1_r3"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 -180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "1" smd roundrect (at -8.2475 -3.75 -180) (size 2.6 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 0 ""))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 -180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 9 "mirror_c1_r3"))
     
     
     
@@ -1008,28 +865,15 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 15) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 9 "mirror_c1_r3"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 -180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "2" smd roundrect (at 7.2475 -3.75 -180) (size 3 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 9 "mirror_c1_r3"))
+    (pad "2" smd roundrect (at 7.8475 -3.75 -180) (size 1.8 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.11944444444444445) (net 9 "mirror_c1_r3"))
     
-    (pad "1" smd custom (at -3.275 -5.95 -180) (size 1 1) (layers "B.Cu" "B.Paste" "B.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 0.25) (xy -0.05 1.3) (xy 1.3 1.3) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
-    
-
-    
-    (pad "2" smd rect (at 7.875 -3.75 -180) (size 1.8 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 9 "mirror_c1_r3"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 15) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
@@ -1048,21 +892,21 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 5.5 0 180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at -5.5 0 180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
-    (pad "" thru_hole circle (at 5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at 5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 4 "D2"))
     
-    (pad "" thru_hole circle (at -5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at -5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 3 "D1"))
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -1085,28 +929,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 0 ""))
     
     
-    (pad "1" connect custom (at 3.275 -5.95 180) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 1.3) (xy 0.05 1.3) (xy 1.3 0.25) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 10 "c1_r4"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "1" smd roundrect (at -8.2475 -3.75 180) (size 2.6 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 0 ""))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "c1_r4"))
     
     
     
@@ -1129,28 +960,15 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 10 "c1_r4"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "2" smd roundrect (at 7.2475 -3.75 180) (size 3 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 10 "c1_r4"))
+    (pad "2" smd roundrect (at 7.8475 -3.75 180) (size 1.8 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.11944444444444445) (net 10 "c1_r4"))
     
-    (pad "1" smd custom (at -3.275 -5.95 180) (size 1 1) (layers "B.Cu" "B.Paste" "B.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 0.25) (xy -0.05 1.3) (xy 1.3 1.3) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
-    
-
-    
-    (pad "2" smd rect (at 7.875 -3.75 180) (size 1.8 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 10 "c1_r4"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
@@ -1169,21 +987,21 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 -180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 -180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 5.5 0 -180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at -5.5 0 -180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
-    (pad "" thru_hole circle (at 5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at 5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 4 "D2"))
     
-    (pad "" thru_hole circle (at -5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at -5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 3 "D1"))
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 -180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 -180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -1206,28 +1024,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 15) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 15) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 0 ""))
     
     
-    (pad "1" connect custom (at 3.275 -5.95 -180) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 1.3) (xy 0.05 1.3) (xy 1.3 0.25) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 -180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 11 "mirror_c1_r4"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 -180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "1" smd roundrect (at -8.2475 -3.75 -180) (size 2.6 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 0 ""))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 -180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 11 "mirror_c1_r4"))
     
     
     
@@ -1250,28 +1055,15 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 15) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 11 "mirror_c1_r4"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 -180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "2" smd roundrect (at 7.2475 -3.75 -180) (size 3 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 11 "mirror_c1_r4"))
+    (pad "2" smd roundrect (at 7.8475 -3.75 -180) (size 1.8 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.11944444444444445) (net 11 "mirror_c1_r4"))
     
-    (pad "1" smd custom (at -3.275 -5.95 -180) (size 1 1) (layers "B.Cu" "B.Paste" "B.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 0.25) (xy -0.05 1.3) (xy 1.3 1.3) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
-    
-
-    
-    (pad "2" smd rect (at 7.875 -3.75 -180) (size 1.8 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 11 "mirror_c1_r4"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 15) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
@@ -1290,7 +1082,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
     (pad "" thru_hole oval (at -5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") (net 12 "c1_r5"))
@@ -1299,7 +1091,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -1322,28 +1114,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 0 ""))
     
     
-    (pad "1" connect custom (at 3.275 -5.95 180) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 1.3) (xy 0.05 1.3) (xy 1.3 0.25) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 12 "c1_r5"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "1" smd roundrect (at -8.2475 -3.75 180) (size 2.6 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 0 ""))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 12 "c1_r5"))
     
     
     
@@ -1366,28 +1145,15 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 12 "c1_r5"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "2" smd roundrect (at 7.2475 -3.75 180) (size 3 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 12 "c1_r5"))
+    (pad "2" smd roundrect (at 7.8475 -3.75 180) (size 1.8 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.11944444444444445) (net 12 "c1_r5"))
     
-    (pad "1" smd custom (at -3.275 -5.95 180) (size 1 1) (layers "B.Cu" "B.Paste" "B.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 0.25) (xy -0.05 1.3) (xy 1.3 1.3) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
-    
-
-    
-    (pad "2" smd rect (at 7.875 -3.75 180) (size 1.8 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 12 "c1_r5"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
     (pad "2" thru_hole circle (at 0 5.9 375) (size 2.032 2.032) (drill 1.27) (layers "*.Cu" "*.Mask") (net 0 ""))
@@ -1412,7 +1178,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 -180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
     (pad "" thru_hole oval (at -5 5.15 -180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") (net 13 "mirror_c1_r5"))
@@ -1421,7 +1187,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 -180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 -180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -1444,28 +1210,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 15) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 15) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 0 ""))
     
     
-    (pad "1" connect custom (at 3.275 -5.95 -180) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 1.3) (xy 0.05 1.3) (xy 1.3 0.25) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 -180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 13 "mirror_c1_r5"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 -180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "1" smd roundrect (at -8.2475 -3.75 -180) (size 2.6 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 0 ""))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 -180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 13 "mirror_c1_r5"))
     
     
     
@@ -1488,28 +1241,15 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 15) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 13 "mirror_c1_r5"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 -180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "2" smd roundrect (at 7.2475 -3.75 -180) (size 3 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 13 "mirror_c1_r5"))
+    (pad "2" smd roundrect (at 7.8475 -3.75 -180) (size 1.8 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.11944444444444445) (net 13 "mirror_c1_r5"))
     
-    (pad "1" smd custom (at -3.275 -5.95 -180) (size 1 1) (layers "B.Cu" "B.Paste" "B.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 0.25) (xy -0.05 1.3) (xy 1.3 1.3) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
-    
-
-    
-    (pad "2" smd rect (at 7.875 -3.75 -180) (size 1.8 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 13 "mirror_c1_r5"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 15) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
     (pad "2" thru_hole circle (at 0 5.9 15) (size 2.032 2.032) (drill 1.27) (layers "*.Cu" "*.Mask") (net 0 ""))
@@ -1534,12 +1274,12 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
-    (pad "" thru_hole circle (at 5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at 5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 4 "D2"))
     
-    (pad "" thru_hole circle (at -5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at -5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 3 "D1"))
     
     (pad "2" thru_hole circle (at 0 -5.9 375) (size 2.032 2.032) (drill 1.27) (layers "*.Cu" "*.Mask") (net 0 ""))
     
@@ -1563,12 +1303,12 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 -180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
-    (pad "" thru_hole circle (at 5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at 5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 4 "D2"))
     
-    (pad "" thru_hole circle (at -5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at -5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 3 "D1"))
     
     (pad "2" thru_hole circle (at 0 -5.9 15) (size 2.032 2.032) (drill 1.27) (layers "*.Cu" "*.Mask") (net 0 ""))
     
@@ -1592,12 +1332,12 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
-    (pad "" thru_hole oval (at 5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole oval (at 5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") (net 4 "D2"))
     
-    (pad "" thru_hole oval (at -5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole oval (at -5 5.15 180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") (net 3 "D1"))
     
     (pad "2" thru_hole circle (at 0 -5.9 375) (size 2.032 2.032) (drill 1.27) (layers "*.Cu" "*.Mask") (net 0 ""))
     
@@ -1621,12 +1361,12 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 -180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
-    (pad "" thru_hole oval (at 5 5.15 -180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole oval (at 5 5.15 -180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") (net 4 "D2"))
     
-    (pad "" thru_hole oval (at -5 5.15 -180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole oval (at -5 5.15 -180) (size 2.4 1.2) (drill oval 1.6 0.4) (layers "*.Cu" "*.Mask") (net 3 "D1"))
     
     (pad "2" thru_hole circle (at 0 -5.9 15) (size 2.032 2.032) (drill 1.27) (layers "*.Cu" "*.Mask") (net 0 ""))
     
@@ -1650,12 +1390,12 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 180) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 180) (size 3.7 3.7) (drill 3.4) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 5.5 0 180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at -5.5 0 180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     (pad "2" thru_hole circle (at 0 -5.9 375) (size 2.032 2.032) (drill 1.27) (layers "*.Cu" "*.Mask") (net 0 ""))
@@ -1680,12 +1420,12 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -180) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 -180) (size 3.7 3.7) (drill 3.4) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 -180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 5.5 0 -180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at -5.5 0 -180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     (pad "2" thru_hole circle (at 0 -5.9 15) (size 2.032 2.032) (drill 1.27) (layers "*.Cu" "*.Mask") (net 0 ""))
@@ -1710,17 +1450,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 5.5 0 180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at -5.5 0 180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
-    (pad "" thru_hole circle (at 5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at 5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 4 "D2"))
     
-    (pad "" thru_hole circle (at -5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at -5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 3 "D1"))
     
     (pad "2" thru_hole circle (at 0 -5.9 375) (size 2.032 2.032) (drill 1.27) (layers "*.Cu" "*.Mask") (net 0 ""))
     
@@ -1744,17 +1484,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 -180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 -180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -180) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 5.5 0 -180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at -5.5 0 -180) (size 2.1999999999999997 2.1999999999999997) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
-    (pad "" thru_hole circle (at 5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at 5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 4 "D2"))
     
-    (pad "" thru_hole circle (at -5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at -5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 3 "D1"))
     
     (pad "2" thru_hole circle (at 0 -5.9 15) (size 2.032 2.032) (drill 1.27) (layers "*.Cu" "*.Mask") (net 0 ""))
     
@@ -1778,16 +1518,16 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
-    (pad "" thru_hole circle (at 5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at 5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 4 "D2"))
     
-    (pad "" thru_hole circle (at -5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at -5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 3 "D1"))
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -1810,28 +1550,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 0 ""))
     
     
-    (pad "1" connect custom (at 3.275 -5.95 180) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 1.3) (xy 0.05 1.3) (xy 1.3 0.25) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 22 "c2_r5"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "1" smd roundrect (at -8.2475 -3.75 180) (size 2.6 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 0 ""))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 22 "c2_r5"))
     
     
     
@@ -1854,28 +1581,15 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 22 "c2_r5"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "2" smd roundrect (at 7.2475 -3.75 180) (size 3 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 22 "c2_r5"))
+    (pad "2" smd roundrect (at 7.8475 -3.75 180) (size 1.8 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.11944444444444445) (net 22 "c2_r5"))
     
-    (pad "1" smd custom (at -3.275 -5.95 180) (size 1 1) (layers "B.Cu" "B.Paste" "B.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 0.25) (xy -0.05 1.3) (xy 1.3 1.3) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
-    
-
-    
-    (pad "2" smd rect (at 7.875 -3.75 180) (size 1.8 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 22 "c2_r5"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
@@ -1894,16 +1608,16 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 -180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") (net 2 "GND"))
     
     
-    (pad "" thru_hole circle (at 5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at 5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 4 "D2"))
     
-    (pad "" thru_hole circle (at -5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
+    (pad "" thru_hole circle (at -5.00 5.15 -180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") (net 3 "D1"))
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 -180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 -180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -1926,28 +1640,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 15) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 15) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 0 ""))
     
     
-    (pad "1" connect custom (at 3.275 -5.95 -180) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 1.3) (xy 0.05 1.3) (xy 1.3 0.25) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 -180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 23 "mirror_c2_r5"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 -180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "1" smd roundrect (at -8.2475 -3.75 -180) (size 2.6 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 0 ""))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 -180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 23 "mirror_c2_r5"))
     
     
     
@@ -1970,28 +1671,15 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 15) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 23 "mirror_c2_r5"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 -180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 0 ""))
+    (pad "2" smd roundrect (at 7.2475 -3.75 -180) (size 3 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 23 "mirror_c2_r5"))
+    (pad "2" smd roundrect (at 7.8475 -3.75 -180) (size 1.8 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.11944444444444445) (net 23 "mirror_c2_r5"))
     
-    (pad "1" smd custom (at -3.275 -5.95 -180) (size 1 1) (layers "B.Cu" "B.Paste" "B.Mask")
-      (zone_connect 0)
-      (options (clearance outline) (anchor rect))
-      (primitives
-        (gr_poly
-          (pts
-            (xy -1.3 -1.3) (xy -1.3 0.25) (xy -0.05 1.3) (xy 1.3 1.3) (xy 1.3 -1.3)
-          )
-          (width 0)
-          (fill yes)
-        )
-      )
-      (net 0 "")
-    )
-    
-
-    
-    (pad "2" smd rect (at 7.875 -3.75 -180) (size 1.8 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 23 "mirror_c2_r5"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 15) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
