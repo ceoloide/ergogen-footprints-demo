@@ -109,7 +109,7 @@ pcbs:
         what: ceoloide/switch_choc_v1_v2
         where: /choc_v1_v2_c1_r1/
         params:
-          from: "{{column_net}}"
+          from: "{{col.name}}"
           to: "{{colrow}}"
           reversible: true
           hotswap: true
@@ -125,7 +125,7 @@ pcbs:
         what: ceoloide/switch_choc_v1_v2
         where: /choc_v1_v2_c1_r2/
         params:
-          from: "{{column_net}}"
+          from: "{{col.name}}"
           to: "{{colrow}}"
           reversible: true
           hotswap: true
@@ -141,7 +141,7 @@ pcbs:
         what: ceoloide/switch_choc_v1_v2
         where: /choc_v1_v2_c1_r3/
         params:
-          from: "{{column_net}}"
+          from: "{{col.name}}"
           to: "{{colrow}}"
           reversible: true
           hotswap: true
@@ -155,7 +155,7 @@ pcbs:
         what: ceoloide/switch_choc_v1_v2
         where: /choc_v1_v2_c1_r4/
         params:
-          from: "{{column_net}}"
+          from: "{{col.name}}"
           to: "{{colrow}}"
           reversible: true
           hotswap: true
@@ -169,7 +169,7 @@ pcbs:
         what: ceoloide/switch_choc_v1_v2
         where: /choc_v1_v2_c1_r5/
         params:
-          from: "{{column_net}}"
+          from: "{{col.name}}"
           to: "{{colrow}}"
           reversible: true
           hotswap: true
@@ -184,7 +184,7 @@ pcbs:
         what: ceoloide/switch_choc_v1_v2
         where: /choc_v1_v2_c2_r1/
         params:
-          from: "{{column_net}}"
+          from: "{{col.name}}"
           to: "{{colrow}}"
           reversible: true
           hotswap: false
@@ -193,13 +193,14 @@ pcbs:
           oval_stabilizer_pad: false
           choc_v1_support: false
           choc_v2_support: true
+          include_plated_holes: true
         adjust:
           rotate: 180
       switch_2_2:
         what: ceoloide/switch_choc_v1_v2
         where: /choc_v1_v2_c2_r2/
         params:
-          from: "{{column_net}}"
+          from: "{{col.name}}"
           to: "{{colrow}}"
           reversible: true
           hotswap: false
@@ -208,13 +209,14 @@ pcbs:
           oval_stabilizer_pad: true
           choc_v1_support: false
           choc_v2_support: true
+          include_plated_holes: true
         adjust:
           rotate: 180
       switch_2_3:
         what: ceoloide/switch_choc_v1_v2
         where: /choc_v1_v2_c2_r3/
         params:
-          from: "{{column_net}}"
+          from: "{{col.name}}"
           to: "{{colrow}}"
           reversible: true
           hotswap: false
@@ -223,13 +225,14 @@ pcbs:
           oval_stabilizer_pad: true
           choc_v1_support: true
           choc_v2_support: false
+          include_plated_holes: true
         adjust:
           rotate: 180
       switch_2_4:
         what: ceoloide/switch_choc_v1_v2
         where: /choc_v1_v2_c2_r4/
         params:
-          from: "{{column_net}}"
+          from: "{{col.name}}"
           to: "{{colrow}}"
           reversible: true
           hotswap: false
@@ -238,13 +241,17 @@ pcbs:
           oval_stabilizer_pad: false
           choc_v1_support: true
           choc_v2_support: true
+          include_plated_holes: true
+          include_stabilizer_nets: true
+          LEFTSTAB: "{{row}}"
+          RIGHTSTAB: "{{row}}"
         adjust:
           rotate: 180
       switch_2_5:
         what: ceoloide/switch_choc_v1_v2
         where: /choc_v1_v2_c2_r5/
         params:
-          from: "{{column_net}}"
+          from: "{{col.name}}"
           to: "{{colrow}}"
           reversible: true
           hotswap: true
@@ -253,6 +260,12 @@ pcbs:
           choc_v2_support: true
           oval_stabilizer_pad: false
           outer_pad_width_back: 1.8
+          include_plated_holes: true
+          include_centerhole_net: true
+          include_stabilizer_nets: true
+          LEFTSTAB: LED_3
+          RIGHTSTAB: LED_2
+          CENTERHOLE: GND
         adjust:
           rotate: 180
 
@@ -261,7 +274,7 @@ pcbs:
         where: [/choc_v1_v2_c1_.*/, /choc_v1_v2_c2_.*/]
         params:
           from: "{{colrow}}"
-          to: "{{row_net}}"
+          to: "{{row}}"
           include_tht: false
           reversible: false
           side: B
@@ -275,7 +288,7 @@ pcbs:
         where: [/choc_v1_v2_c1/, /choc_v1_v2_c2/]
         params:
           from: "{{colrow}}"
-          to: "{{row_net}}"
+          to: "{{row}}"
           include_tht: false
           reversible: false
           side: F
@@ -319,6 +332,20 @@ pcbs:
           reversible: true
           reverse_mount: true
           include_traces_vias: true
+        adjust:
+          shift: [0, 4.7]
+          
+      per_key_led_3:
+        what: ceoloide/led_sk6812mini-e
+        where: /choc_v1_v2_c2_r5/
+        params:
+          P1: VCC
+          P2: LED_3 # DOUT
+          P3: GND
+          P4: LED_2 # DIN
+          reversible: true
+          reverse_mount: true
+          include_traces_vias: false
         adjust:
           shift: [0, 4.7]
       
