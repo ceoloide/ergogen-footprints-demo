@@ -95,6 +95,7 @@ outlines:
 pcbs:
   ergogen_footprints_demo:
     template: kicad8
+    # references: true
     outlines:
       main:
         outline: board_outline
@@ -148,6 +149,7 @@ pcbs:
           solder: false
           choc_v1_support: true
           choc_v2_support: false
+          include_choc_v1_led_cutout_marks: true
           outer_pad_width_back: 1.8
         adjust:
           rotate: 180
@@ -258,6 +260,7 @@ pcbs:
           solder: false
           choc_v1_support: false
           choc_v2_support: true
+          include_choc_v2_led_cutout_marks: true
           oval_stabilizer_pad: false
           outer_pad_width_back: 1.8
           include_plated_holes: true
@@ -280,7 +283,7 @@ pcbs:
           side: B
         adjust:
           rotate: -90
-          shift: [-7.75,1]
+          shift: [-7.75,4.2]
           resist: true
 
       diodes_f:
@@ -294,7 +297,7 @@ pcbs:
           side: F
         adjust:
           rotate: -90
-          shift: [8.25,1]
+          shift: [8.25,4.2]
           resist: true
 
       mounting_hole_1:
@@ -318,6 +321,7 @@ pcbs:
           reversible: true
           reverse_mount: true
           include_traces_vias: false
+          include_courtyard: false
         adjust:
           shift: [0, 4.7]
           
@@ -332,6 +336,7 @@ pcbs:
           reversible: true
           reverse_mount: true
           include_traces_vias: true
+          include_courtyard: false
         adjust:
           shift: [0, 4.7]
           
@@ -346,6 +351,7 @@ pcbs:
           reversible: true
           reverse_mount: true
           include_traces_vias: false
+          include_courtyard: false
         adjust:
           shift: [0, 4.7]
       
@@ -360,8 +366,9 @@ pcbs:
           reversible: true
           reverse_mount: false
           include_traces_vias: true
+          include_courtyard: false
         adjust:
-          shift: [0, 4.7 + 4.4]
+          shift: [0, 4.7 + 4.4 - 0.75]
       
       jlcpcb_order_number_text:
         what: ceoloide/utility_text
@@ -485,6 +492,7 @@ pcbs:
           invert_behavior: false
         adjust:
           shift: [7.5,-1.5]
+          rotate: 180
 
       reset_switch_smd_1:
         what: ceoloide/reset_switch_smd_side
@@ -593,7 +601,7 @@ pcbs:
           scale: 2.0
           reversible: true
         adjust:
-            shift: [u,20-u/2]
+            shift: [u,0]
       
       ergogen_logo_4:
         what: ceoloide/utility_ergogen_logo
@@ -602,7 +610,7 @@ pcbs:
           scale: 2.5
           reversible: true
         adjust:
-            shift: [2u,20-u/2]
+            shift: [2u,0]
       
       ergogen_logo_5:
         what: ceoloide/utility_ergogen_logo
@@ -611,7 +619,7 @@ pcbs:
           scale: 3.0
           reversible: true
         adjust:
-            shift: [3u,20-u/2]
+            shift: [3u,0]
       
       copper_fill:
         what: ceoloide/utility_filled_zone
@@ -647,3 +655,27 @@ pcbs:
         adjust:
           shift: [1, -5]
           rotate: -90
+
+      rotary_encoder_ec11_ec12_1:
+        what: ceoloide/rotary_encoder_ec11_ec12
+        where: 
+          - /choc_v1_v2_c1_r[2  5]/
+        params:
+          reversible: true
+          include_momentary_switch_pads: true
+          include_plate_hole_marking: true
+          include_silkscreen: true
+          encoder_pads_position: 8.254
+          include_plated_mounting_holes: false
+          S1: "{{col.name}}"
+          S2: "{{colrow}}"
+
+      rotary_encoder_ec11_ec12_2:
+        what: ceoloide/rotary_encoder_ec11_ec12
+        where: 
+          - /choc_v1_v2_c2_r[25]/
+        params:
+          reversible: true
+          include_plate_hole_marking: false
+          include_silkscreen: false
+          encoder_pads_position: 8.554
