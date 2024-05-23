@@ -5,10 +5,9 @@ kibot:
   version: 1
 
 preflight:
+  fill_zones: true
+  drc: false
   run_erc: false
-  run_drc: false
-  check_zone_fills: false
-  ignore_unconnected: false
 
 outputs:
   - name: jlcpcb_gerbers
