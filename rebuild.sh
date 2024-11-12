@@ -33,29 +33,29 @@ do
     echo "\n\n>>>>>> Processing $board <<<<<<\n\n"
 
     # Cleanup the outputs
-    rm -f ergogen/output/pcbs/${board}.dsn  
-    rm -f ergogen/output/pcbs/${board}.ses  
-    rm -f ergogen/output/pcbs/${board}.pro  
-    rm -f ergogen/output/pcbs/${board}_autorouted.kicad_pcb  
+    rm -f pcbs/${board}.dsn  
+    rm -f pcbs/${board}.ses  
+    rm -f pcbs/${board}.pro  
+    rm -f pcbs/${board}_autorouted.kicad_pcb  
  
-    if [ -e ergogen/output/pcbs/${board}.kicad_pcb ]; then
+    if [ -e pcbs/${board}.kicad_pcb ]; then
         echo Export DSN 
-        ${container_cmd} run ${container_args} ${kicad_auto_image} kibot/export_dsn.py -b ergogen/output/pcbs/${board}.kicad_pcb -o ergogen/output/pcbs/${board}.dsn
-        ${container_cmd} run ${container_args} ${kicad_auto_image} kibot -b ergogen/output/pcbs/${board}.kicad_pcb -c kibot/default.kibot.yaml
+        ${container_cmd} run ${container_args} ${kicad_auto_image} kibot/export_dsn.py -b pcbs/${board}.kicad_pcb -o pcbs/${board}.dsn
+        ${container_cmd} run ${container_args} ${kicad_auto_image} kibot -b pcbs/${board}.kicad_pcb -c kibot/default.kibot.yaml
     fi
-    if [ -e ergogen/output/pcbs/${board}.dsn ]; then
+    if [ -e pcbs/${board}.dsn ]; then
         echo Autoroute PCB
-        # ${container_cmd} run ${container_args} ${freerouting_cli_image} java -Dlog4j.configurationFile=file:./freerouting/log4j2.xml -jar /opt/freerouting_cli.jar -de ergogen/output/pcbs/${board}.dsn -do ergogen/output/pcbs/${board}.ses -dr freerouting/freerouting.rules -mp 20
-        ${container_cmd} run ${container_args} ${freerouting_cli_image} java -Dlog4j.configurationFile=file:./freerouting/log4j2.xml -jar /opt/freerouting.jar -de ergogen/output/pcbs/${board}.dsn -do ergogen/output/pcbs/${board}.ses --user-data-path ./freerouting -mp 20 -mt 1 -dct 0 --gui.enabled=false --profile.email=marco.massarelli@gmail.com
-        # java -Dlog4j.configurationFile=file:./freerouting/log4j2.xml -jar freerouting/freerouting-2.0.0.jar -de ergogen/output/pcbs/${board}.dsn -do ergogen/output/pcbs/${board}.ses --user-data-path ./freerouting -mp 20 -mt 1 -dct 0 --gui.enabled=false --profile.email=marco.massarelli@gmail.com
-        # java -Dlog4j.configurationFile=file:./freerouting/log4j2.xml -jar freerouting/freerouting-SNAPSHOT.jar -de ergogen/output/pcbs/${board}.dsn -do ergogen/output/pcbs/${board}.ses --user-data-path ./freerouting -mp 20 -mt 1 -dct 0 --gui.enabled=false --profile.email=marco.massarelli@gmail.com
+        # ${container_cmd} run ${container_args} ${freerouting_cli_image} java -Dlog4j.configurationFile=file:./freerouting/log4j2.xml -jar /opt/freerouting_cli.jar -de pcbs/${board}.dsn -do pcbs/${board}.ses -dr freerouting/freerouting.rules -mp 20
+        ${container_cmd} run ${container_args} ${freerouting_cli_image} java -Dlog4j.configurationFile=file:./freerouting/log4j2.xml -jar /opt/freerouting.jar -de pcbs/${board}.dsn -do pcbs/${board}.ses --user-data-path ./freerouting -mp 20 -mt 1 -dct 0 --gui.enabled=false --profile.email=marco.massarelli@gmail.com
+        # java -Dlog4j.configurationFile=file:./freerouting/log4j2.xml -jar freerouting/freerouting-2.0.0.jar -de pcbs/${board}.dsn -do pcbs/${board}.ses --user-data-path ./freerouting -mp 20 -mt 1 -dct 0 --gui.enabled=false --profile.email=marco.massarelli@gmail.com
+        # java -Dlog4j.configurationFile=file:./freerouting/log4j2.xml -jar freerouting/freerouting-SNAPSHOT.jar -de pcbs/${board}.dsn -do pcbs/${board}.ses --user-data-path ./freerouting -mp 20 -mt 1 -dct 0 --gui.enabled=false --profile.email=marco.massarelli@gmail.com
     fi
-    if [ -e ergogen/output/pcbs/${board}.ses ]; then
+    if [ -e pcbs/${board}.ses ]; then
         echo "Import SES"
-        ${container_cmd} run ${container_args} ${kicad_auto_image} kibot/import_ses.py -b ergogen/output/pcbs/${board}.kicad_pcb -s ergogen/output/pcbs/${board}.ses -o ergogen/output/pcbs/${board}_autorouted.kicad_pcb
+        ${container_cmd} run ${container_args} ${kicad_auto_image} kibot/import_ses.py -b pcbs/${board}.kicad_pcb -s pcbs/${board}.ses -o pcbs/${board}_autorouted.kicad_pcb
     fi
-    if [ -e ergogen/output/pcbs/${board}_autorouted.kicad_pcb ]; then
-        ${container_cmd} run ${container_args} ${kicad_auto_image} kibot -b ergogen/output/pcbs/${board}_autorouted.kicad_pcb -c kibot/boards.kibot.yaml
+    if [ -e pcbs/${board}_autorouted.kicad_pcb ]; then
+        ${container_cmd} run ${container_args} ${kicad_auto_image} kibot -b pcbs/${board}_autorouted.kicad_pcb -c kibot/boards.kibot.yaml
     fi
 done
 
