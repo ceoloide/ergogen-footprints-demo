@@ -20,7 +20,7 @@ points:
       key:
         tags:
           - helper
-    choc_v1_v2:
+    switch:
       key:
         padding: u
         spread: u
@@ -93,7 +93,7 @@ outlines:
       operation: stack
 
 pcbs:
-  ergogen_footprints_demo:
+  choc_demo:
     template: kicad8
     # references: true
     outlines:
@@ -108,7 +108,7 @@ pcbs:
     footprints:
       switch_1_1:
         what: ceoloide/switch_choc_v1_v2
-        where: /choc_v1_v2_c1_r1/
+        where: /switch_c1_r1/
         params:
           from: "{{col.name}}"
           to: "{{colrow}}"
@@ -124,7 +124,7 @@ pcbs:
           rotate: 180
       switch_1_2:
         what: ceoloide/switch_choc_v1_v2
-        where: /choc_v1_v2_c1_r2/
+        where: /switch_c1_r2/
         params:
           from: "{{col.name}}"
           to: "{{colrow}}"
@@ -140,7 +140,7 @@ pcbs:
           rotate: 180
       switch_1_3:
         what: ceoloide/switch_choc_v1_v2
-        where: /choc_v1_v2_c1_r3/
+        where: /switch_c1_r3/
         params:
           from: "{{col.name}}"
           to: "{{colrow}}"
@@ -155,7 +155,7 @@ pcbs:
           rotate: 180
       switch_1_4:
         what: ceoloide/switch_choc_v1_v2
-        where: /choc_v1_v2_c1_r4/
+        where: /switch_c1_r4/
         params:
           from: "{{col.name}}"
           to: "{{colrow}}"
@@ -169,7 +169,7 @@ pcbs:
           rotate: 180
       switch_1_5:
         what: ceoloide/switch_choc_v1_v2
-        where: /choc_v1_v2_c1_r5/
+        where: /switch_c1_r5/
         params:
           from: "{{col.name}}"
           to: "{{colrow}}"
@@ -184,7 +184,7 @@ pcbs:
           rotate: 180
       switch_2_1:
         what: ceoloide/switch_choc_v1_v2
-        where: /choc_v1_v2_c2_r1/
+        where: /switch_c2_r1/
         params:
           from: "{{col.name}}"
           to: "{{colrow}}"
@@ -200,7 +200,7 @@ pcbs:
           rotate: 180
       switch_2_2:
         what: ceoloide/switch_choc_v1_v2
-        where: /choc_v1_v2_c2_r2/
+        where: /switch_c2_r2/
         params:
           from: "{{col.name}}"
           to: "{{colrow}}"
@@ -216,7 +216,7 @@ pcbs:
           rotate: 180
       switch_2_3:
         what: ceoloide/switch_choc_v1_v2
-        where: /choc_v1_v2_c2_r3/
+        where: /switch_c2_r3/
         params:
           from: "{{col.name}}"
           to: "{{colrow}}"
@@ -232,7 +232,7 @@ pcbs:
           rotate: 180
       switch_2_4:
         what: ceoloide/switch_choc_v1_v2
-        where: /choc_v1_v2_c2_r4/
+        where: /switch_c2_r4/
         params:
           from: "{{col.name}}"
           to: "{{colrow}}"
@@ -251,7 +251,7 @@ pcbs:
           rotate: 180
       switch_2_5:
         what: ceoloide/switch_choc_v1_v2
-        where: /choc_v1_v2_c2_r5/
+        where: /switch_c2_r5/
         params:
           from: "{{col.name}}"
           to: "{{colrow}}"
@@ -274,7 +274,7 @@ pcbs:
 
       diodes_b:
         what: ceoloide/diode_tht_sod123
-        where: [/choc_v1_v2_c1_.*/, /choc_v1_v2_c2_.*/]
+        where: [/switch_c1_.*/, /switch_c2_.*/]
         params:
           from: "{{colrow}}"
           to: "{{row}}"
@@ -285,10 +285,9 @@ pcbs:
           rotate: -90
           shift: [-7.75,4.2]
           resist: true
-
       diodes_f:
         what: ceoloide/diode_tht_sod123
-        where: [/choc_v1_v2_c1/, /choc_v1_v2_c2/]
+        where: [/switch_c1/, /switch_c2/]
         params:
           from: "{{colrow}}"
           to: "{{row}}"
@@ -302,7 +301,7 @@ pcbs:
 
       mounting_hole_1:
         what: ceoloide/mounting_hole_npth
-        where: /choc_v1_v2_c2_r[1-4]/
+        where: /switch_c2_r[1-4]/
         params:
           hole_size: spacer_diameter + 0.8
           hole_drill: spacer_diameter
@@ -311,7 +310,7 @@ pcbs:
           
       per_key_led_1:
         what: ceoloide/led_sk6812mini-e
-        where: /choc_v1_v2_c1_r2/
+        where: /switch_c1_r2/
         params:
           P1: VCC
           P2: LED_U_1 # DOUT
@@ -327,7 +326,7 @@ pcbs:
           
       per_key_led_2:
         what: ceoloide/led_sk6812mini-e
-        where: /choc_v1_v2_c1_r3/
+        where: /switch_c1_r3/
         params:
           P1: VCC
           P2: LED_3 # DOUT
@@ -342,7 +341,7 @@ pcbs:
           
       per_key_led_3:
         what: ceoloide/led_sk6812mini-e
-        where: /choc_v1_v2_c2_r5/
+        where: /switch_c2_r5/
         params:
           P1: VCC
           P2: LED_3 # DOUT
@@ -357,7 +356,7 @@ pcbs:
       
       underglow_led_1:
         what: ceoloide/led_sk6812mini-e
-        where: /choc_v1_v2_c1_r3/
+        where: /switch_c1_r3/
         params:
           P1: VCC
           P2: LED_2 # DOUT
@@ -372,7 +371,7 @@ pcbs:
       
       jlcpcb_order_number_text:
         what: ceoloide/utility_text
-        where: /choc_v1_v2_c1_r1/
+        where: /switch_c1_r1/
         params:
           text: JLCJLCJLCJLC
           reversible: true
@@ -385,17 +384,18 @@ pcbs:
       # Top of USB-C to top of PCB: 0.9mm
       nice_nano_1:
         what: ceoloide/mcu_nice_nano
-        where: /choc_v1_v2_c2_r1/
+        where: /switch_c2_r1/
         params:
           use_rectangular_jumpers: true
-          reversible: true
+          reversible: false
+          side: F
           reverse_mount: true
         adjust:
             shift: [3u,-33/2+u/2]
 
       nice_view_1:
         what: ceoloide/display_nice_view
-        where: /choc_v1_v2_c2_r1/
+        where: /switch_c2_r1/
         params:
           MOSI: SDA
           SCK: SCL
@@ -406,16 +406,17 @@ pcbs:
 
       nice_nano_2:
         what: ceoloide/mcu_nice_nano
-        where: /choc_v1_v2_c2_r1/
+        where: /switch_c2_r1/
         params:
           use_rectangular_jumpers: false
-          reversible: true
+          reversible: false
+          side: F
         adjust:
             shift: [2u,-33/2+u/2]
       
       nice_view_2:
         what: ceoloide/display_nice_view
-        where: /choc_v1_v2_c2_r1/
+        where: /switch_c2_r1/
         params:
           MOSI: SDA
           SCK: SCL
@@ -463,19 +464,20 @@ pcbs:
 
       nice_nano_3:
         what: ceoloide/mcu_nice_nano
-        where: /choc_v1_v2_c2_r1/
+        where: /switch_c2_r1/
         params:
           use_rectangular_jumpers: false
           only_required_jumpers: true
           include_extra_pins: true
-          reversible: true
-          reverse_mount: true
+          reversible: false
+          reverse_mount: false
+          side: F
         adjust:
             shift: [u,-33/2+u/2]
       
       nice_view_3:
         what: ceoloide/display_nice_view
-        where: /choc_v1_v2_c2_r1/
+        where: /switch_c2_r1/
         params:
           MOSI: SDA
           SCK: SCL
@@ -496,7 +498,7 @@ pcbs:
 
       reset_switch_smd_1:
         what: ceoloide/reset_switch_smd_side
-        where: /choc_v1_v2_c2_r1/
+        where: /switch_c2_r1/
         params:
           reversible: true
           include_bosses: false
@@ -505,7 +507,7 @@ pcbs:
 
       reset_switch_smd_2:
         what: ceoloide/reset_switch_smd_side
-        where: /choc_v1_v2_c1_r1/
+        where: /switch_c1_r1/
         params:
           reversible: true
           include_bosses: true
@@ -548,7 +550,7 @@ pcbs:
       
       display_ssd1306_1:
         what: ceoloide/display_ssd1306
-        where: /choc_v1_v2_c2_r5/
+        where: /switch_c2_r5/
         params:
           reversible: true
           invert_jumpers_position: false
@@ -558,7 +560,7 @@ pcbs:
       
       display_ssd1306_2:
         what: ceoloide/display_ssd1306
-        where: /choc_v1_v2_c2_r5/
+        where: /switch_c2_r5/
         params:
           reversible: true
           invert_jumpers_position: true
@@ -568,7 +570,7 @@ pcbs:
       
       display_ssd1306_3:
         what: ceoloide/display_ssd1306
-        where: /choc_v1_v2_c2_r5/
+        where: /switch_c2_r5/
         params:
           reversible: true
           invert_jumpers_position: false
@@ -578,7 +580,7 @@ pcbs:
       
       ergogen_logo_1:
         what: ceoloide/utility_ergogen_logo
-        where: /choc_v1_v2_c2_r1/
+        where: /switch_c2_r1/
         params:
           scale: 1.0
           reversible: true
@@ -596,7 +598,7 @@ pcbs:
       
       ergogen_logo_3:
         what: ceoloide/utility_ergogen_logo
-        where: /choc_v1_v2_c2_r5/
+        where: /switch_c2_r5/
         params:
           scale: 2.0
           reversible: true
@@ -605,7 +607,7 @@ pcbs:
       
       ergogen_logo_4:
         what: ceoloide/utility_ergogen_logo
-        where: /choc_v1_v2_c2_r5/
+        where: /switch_c2_r5/
         params:
           scale: 2.5
           reversible: true
@@ -614,7 +616,7 @@ pcbs:
       
       ergogen_logo_5:
         what: ceoloide/utility_ergogen_logo
-        where: /choc_v1_v2_c2_r5/
+        where: /switch_c2_r5/
         params:
           scale: 3.0
           reversible: true
@@ -628,13 +630,13 @@ pcbs:
       
       mounting_hole_plated_1:
         what: ceoloide/mounting_hole_plated
-        where: /choc_v1_v2_c2_r3/
+        where: /switch_c2_r3/
         adjust:
           shift: [0.5u, 0.5u]
       
       mounting_hole_plated_2:
         what: ceoloide/mounting_hole_plated
-        where: /choc_v1_v2_c2_r4/
+        where: /switch_c2_r4/
         params:
           drill_y: 4.4
         adjust:
@@ -659,7 +661,7 @@ pcbs:
       rotary_encoder_ec11_ec12_1:
         what: ceoloide/rotary_encoder_ec11_ec12
         where: 
-          - /choc_v1_v2_c1_r[2  5]/
+          - /switch_c1_r[2  5]/
         params:
           reversible: true
           include_momentary_switch_pads: true
@@ -673,9 +675,338 @@ pcbs:
       rotary_encoder_ec11_ec12_2:
         what: ceoloide/rotary_encoder_ec11_ec12
         where: 
-          - /choc_v1_v2_c2_r[25]/
+          - /switch_c2_r[25]/
         params:
           reversible: true
           include_plate_hole_marking: false
           include_silkscreen: false
           encoder_pads_position: 8.554
+  mx_demo:
+    template: kicad8
+    # references: true
+    outlines:
+      main:
+        outline: board_outline
+      keys:
+        outline: keys
+        layer: Eco1.User
+      keycaps:
+        outline: keycaps
+        layer: Eco2.User
+    footprints:
+      switch_1_1:
+        what: ceoloide/switch_mx
+        where: /switch_c1_r1/
+        params:
+          from: "{{col.name}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: true
+          solder: false
+        adjust:
+          rotate: 180
+      switch_1_2:
+        what: ceoloide/switch_mx
+        where: /switch_c1_r2/
+        params:
+          from: "{{col.name}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: true
+          solder: false
+          outer_pad_height: 2
+        adjust:
+          rotate: 180
+      switch_1_3:
+        what: ceoloide/switch_mx
+        where: /switch_c1_r3/
+        params:
+          from: "{{col.name}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: true
+          solder: false
+        adjust:
+          rotate: 180
+      switch_1_4:
+        what: ceoloide/switch_mx
+        where: /switch_c1_r4/
+        params:
+          from: "{{col.name}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: true
+          solder: false
+        adjust:
+          rotate: 180
+      switch_1_5:
+        what: ceoloide/switch_mx
+        where: /switch_c1_r5/
+        params:
+          from: "{{col.name}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: true
+          solder: true
+          outer_pad_height: 2
+        adjust:
+          rotate: 180
+      switch_2_1:
+        what: ceoloide/switch_mx
+        where: /switch_c2_r1/
+        params:
+          from: "{{col.name}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: false
+          solder: true
+        adjust:
+          rotate: 180
+      switch_2_2:
+        what: ceoloide/switch_mx
+        where: /switch_c2_r2/
+        params:
+          from: "{{col.name}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: false
+          solder: true
+        adjust:
+          rotate: 180
+      switch_2_3:
+        what: ceoloide/switch_mx
+        where: /switch_c2_r3/
+        params:
+          from: "{{col.name}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: false
+          solder: true
+        adjust:
+          rotate: 180
+      switch_2_4:
+        what: ceoloide/switch_mx
+        where: /switch_c2_r4/
+        params:
+          from: "{{col.name}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: false
+          solder: true
+          # include_plated_holes: true
+          # include_stabilizer_nets: true
+          # LEFTSTAB: "{{row}}"
+          # RIGHTSTAB: "{{row}}"
+        adjust:
+          rotate: 180
+      switch_2_5:
+        what: ceoloide/switch_mx
+        where: /switch_c2_r5/
+        params:
+          from: "{{col.name}}"
+          to: "{{colrow}}"
+          reversible: true
+          hotswap: true
+          solder: false
+          outer_pad_height: 2
+          # include_choc_v2_led_cutout_marks: true
+          # include_plated_holes: true
+          # include_centerhole_net: true
+          # include_stabilizer_nets: true
+          # LEFTSTAB: LED_3
+          # RIGHTSTAB: LED_2
+          # CENTERHOLE: GND
+        adjust:
+          rotate: 180
+
+      diodes_b:
+        what: ceoloide/diode_tht_sod123
+        where: [/switch_c1_.*/, /switch_c2_.*/]
+        params:
+          from: "{{colrow}}"
+          to: "{{row}}"
+          include_tht: false
+          reversible: false
+          side: B
+        adjust:
+          shift: [-8.25,-5.73]
+          rotate: 90
+          resist: true
+
+      diodes_f:
+        what: ceoloide/diode_tht_sod123
+        where: [/switch_c1/, /switch_c2/]
+        params:
+          from: "{{colrow}}"
+          to: "{{row}}"
+          include_tht: false
+          reversible: false
+          side: F
+        adjust:
+          shift: [8.25,-5.73]
+          rotate: 90
+          resist: true
+          
+      per_key_led_1:
+        what: ceoloide/led_sk6812mini-e
+        where: /switch_c1_r2/
+        params:
+          P1: VCC
+          P2: LED_U_1 # DOUT
+          P3: GND
+          P4: LED # DIN
+          side: B
+          reversible: true
+          reverse_mount: true
+          include_traces_vias: false
+          include_courtyard: false
+        adjust:
+          shift: [0, 4.7]
+          
+      per_key_led_2:
+        what: ceoloide/led_sk6812mini-e
+        where: /switch_c1_r3/
+        params:
+          P1: VCC
+          P2: LED_3 # DOUT
+          P3: GND
+          P4: LED_2 # DIN
+          reversible: true
+          reverse_mount: true
+          include_traces_vias: true
+          include_courtyard: false
+        adjust:
+          shift: [0, 4.7]
+          
+      per_key_led_3:
+        what: ceoloide/led_sk6812mini-e
+        where: /switch_c2_r5/
+        params:
+          P1: VCC
+          P2: LED_3 # DOUT
+          P3: GND
+          P4: LED_2 # DIN
+          reversible: true
+          reverse_mount: true
+          include_traces_vias: false
+          include_courtyard: false
+        adjust:
+          shift: [0, 4.7]
+      
+      underglow_led_1:
+        what: ceoloide/led_sk6812mini-e
+        where: /switch_c1_r3/
+        params:
+          P1: VCC
+          P2: LED_2 # DOUT
+          P3: GND
+          P4: LED_U_1 # DIN
+          reversible: true
+          reverse_mount: false
+          include_traces_vias: true
+          include_courtyard: false
+        adjust:
+          shift: [0, 4.7 + 4.4 - 0.75]
+      
+      jlcpcb_order_number_text:
+        what: ceoloide/utility_text
+        where: /switch_c1_r1/
+        params:
+          text: JLCJLCJLCJLC
+          reversible: true
+        adjust:
+          shift: [u / 2,u / 2 - 1.5]
+
+      # Physical dimensions
+      # Top of pins to end of USB-C: 3.70mm
+      # Top of pins to bottom of PCB: 30.60mm
+      # Top of USB-C to top of PCB: 0.9mm
+      supermini_1:
+        what: ceoloide/mcu_supermini_nrf52840
+        where: /switch_c2_r1/
+        params:
+          use_rectangular_jumpers: true
+          reversible: false
+          side: F
+          reverse_mount: true
+        adjust:
+            shift: [3u,-33/2+u/2]
+
+      nice_view_1:
+        what: ceoloide/display_nice_view
+        where: /switch_c2_r1/
+        params:
+          MOSI: SDA
+          SCK: SCL
+          reversible: true
+          invert_jumpers_position: true
+        adjust:
+            shift: [3u,-20+u/2]
+
+      supermini_2:
+        what: ceoloide/mcu_supermini_nrf52840
+        where: /switch_c2_r1/
+        params:
+          use_rectangular_jumpers: false
+          reversible: false
+          side: F
+        adjust:
+            shift: [2u,-33/2+u/2]
+      
+      nice_view_2:
+        what: ceoloide/display_nice_view
+        where: /switch_c2_r1/
+        params:
+          MOSI: SDA
+          SCK: SCL
+          reversible: true
+          invert_jumpers_position: false
+        adjust:
+            shift: [2u,-20+u/2]
+
+      supermini_3:
+        what: ceoloide/mcu_supermini_nrf52840
+        where: /switch_c2_r1/
+        params:
+          use_rectangular_jumpers: false
+          only_required_jumpers: true
+          include_extra_pins: true
+          reversible: false
+          reverse_mount: false
+          side: F
+        adjust:
+            shift: [u,-33/2+u/2]
+      
+      nice_view_3:
+        what: ceoloide/display_nice_view
+        where: /switch_c2_r1/
+        params:
+          MOSI: SDA
+          SCK: SCL
+          reversible: true
+          invert_jumpers_position: false
+        adjust:
+            shift: [u,-20+u/2]
+
+      rotary_encoder_ec11_ec12_1:
+        what: ceoloide/rotary_encoder_ec11_ec12
+        where: 
+          - /switch_c1_r[25]/
+        params:
+          reversible: true
+          include_momentary_switch_pads: true
+          include_plate_hole_marking: true
+          include_silkscreen: true
+          include_plated_mounting_holes: false
+          S1: "{{col.name}}"
+          S2: "{{colrow}}"
+
+      rotary_encoder_ec11_ec12_2:
+        what: ceoloide/rotary_encoder_ec11_ec12
+        where: 
+          - /switch_c2_r[25]/
+        params:
+          reversible: true
+          include_plate_hole_marking: false
+          include_silkscreen: false  
+          include_plated_mounting_holes: true
