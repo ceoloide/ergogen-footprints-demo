@@ -5,16 +5,12 @@ container_cmd=docker
 container_args="-w /board -v $(pwd):/board --rm"
 
 # Define the boards to autoroute and export, and the plates
-boards="ergogen_footprints_demo"
+boards="choc_demo mx_demo"
 plates=""
 
 # Define the KiCad Auto Docker image to use
-kicad_auto_image="setsoft/kicad_auto:ki8"
-# kicad_auto_image="ceoloide/kicad_auto:nightly"
-# kicad_auto_image="ceoloide/freerouting:snapshot"
-# freerouting_cli_image="ceoloide/kicad_auto:nightly"
-# freerouting_cli_image="soundmonster/freerouting_cli:v0.1.0"
-freerouting_cli_image="ceoloide/freerouting:snapshot"
+kicad_auto_image="ghcr.io/inti-cmnb/kicad8_auto:latest"
+freerouting_cli_image="ceoloide/ergogen-freerouting:latest"
 
 # Preserve manually routed files
 if [ -e pcbs/*_manually_routed.kicad_pcb ]; then
@@ -27,6 +23,7 @@ rm -rf outlines
 rm -rf pcbs
 rm -rf points
 rm -rf source
+rm -rf cases
 
 # Cleanup Freerouting log outpus
 if [ -e freerouting/freerouting.log ]; then
@@ -45,8 +42,8 @@ if [ -e ergogen/tmp/*_manually_routed.kicad_pcb ]; then
     rm -r ergogen/tmp
 fi
 
-if [ ! -e freerouting/freerouting-2.0.0.jar ]; then
-    curl https://github.com/freerouting/freerouting/releases/download/v2.0.0/freerouting-2.0.0.jar -L -o freerouting/freerouting-2.0.0.jar
+if [ ! -e freerouting/freerouting-2.0.1.jar ]; then
+    curl https://github.com/freerouting/freerouting/releases/download/v2.0.1/freerouting-2.0.1.jar -L -o freerouting/freerouting-2.0.1.jar
 fi
 
 if [ ! -e freerouting/freerouting-SNAPSHOT.jar ]; then
@@ -73,8 +70,8 @@ do
     if [ -e pcbs/${board}.dsn ]; then
         echo Autoroute PCB
         # ${container_cmd} run ${container_args} ${freerouting_cli_image} java -Dlog4j.configurationFile=file:./freerouting/log4j2.xml -jar /opt/freerouting_cli.jar -de pcbs/${board}.dsn -do pcbs/${board}.ses -dr freerouting/freerouting.rules -mp 20
-        ${container_cmd} run ${container_args} ${freerouting_cli_image} java -Dlog4j.configurationFile=file:./freerouting/log4j2.xml -jar /freerouting.jar -de pcbs/${board}.dsn -do pcbs/${board}.ses --user-data-path ./freerouting -mp 20 -mt 1 -dct 0 --gui.enabled=false --profile.email=marco.massarelli@gmail.com
-        # java -Dlog4j.configurationFile=file:./freerouting/log4j2.xml -jar freerouting/freerouting-2.0.0.jar -de pcbs/${board}.dsn -do pcbs/${board}.ses --user-data-path ./freerouting -mp 20 -mt 1 -dct 0 --gui.enabled=false --profile.email=marco.massarelli@gmail.com
+        ${container_cmd} run ${container_args} ${freerouting_cli_image} java -Dlog4j.configurationFile=file:./freerouting/log4j2.xml -jar /opt/freerouting.jar -de pcbs/${board}.dsn -do pcbs/${board}.ses --user-data-path ./freerouting -mp 20 -mt 1 -dct 0 --gui.enabled=false --profile.email=marco.massarelli@gmail.com
+        # java -Dlog4j.configurationFile=file:./freerouting/log4j2.xml -jar freerouting/freerouting-2.0.1.jar -de pcbs/${board}.dsn -do pcbs/${board}.ses --user-data-path ./freerouting -mp 20 -mt 1 -dct 0 --gui.enabled=false --profile.email=marco.massarelli@gmail.com
         # java -Dlog4j.configurationFile=file:./freerouting/log4j2.xml -jar freerouting/freerouting-SNAPSHOT.jar -de pcbs/${board}.dsn -do pcbs/${board}.ses --user-data-path ./freerouting -mp 20 -mt 1 -dct 0 --gui.enabled=false --profile.email=marco.massarelli@gmail.com
     fi
     if [ -e pcbs/${board}.ses ]; then

@@ -760,6 +760,7 @@ pcbs:
           reversible: true
           hotswap: false
           solder: true
+          include_plated_holes: true
         adjust:
           rotate: 180
       switch_2_2:
@@ -771,6 +772,7 @@ pcbs:
           reversible: true
           hotswap: false
           solder: true
+          include_plated_holes: true
         adjust:
           rotate: 180
       switch_2_3:
@@ -782,6 +784,7 @@ pcbs:
           reversible: true
           hotswap: false
           solder: true
+          include_plated_holes: true
         adjust:
           rotate: 180
       switch_2_4:
@@ -793,10 +796,10 @@ pcbs:
           reversible: true
           hotswap: false
           solder: true
-          # include_plated_holes: true
-          # include_stabilizer_nets: true
-          # LEFTSTAB: "{{row}}"
-          # RIGHTSTAB: "{{row}}"
+          include_plated_holes: true
+          include_stabilizer_nets: true
+          LEFTSTAB: "{{row}}"
+          RIGHTSTAB: "{{row}}"
         adjust:
           rotate: 180
       switch_2_5:
@@ -806,16 +809,16 @@ pcbs:
           from: "{{col.name}}"
           to: "{{colrow}}"
           reversible: true
-          hotswap: true
-          solder: false
+          hotswap: false
+          solder: true
           outer_pad_height: 2
           # include_choc_v2_led_cutout_marks: true
-          # include_plated_holes: true
-          # include_centerhole_net: true
-          # include_stabilizer_nets: true
-          # LEFTSTAB: LED_3
-          # RIGHTSTAB: LED_2
-          # CENTERHOLE: GND
+          include_plated_holes: true
+          include_centerhole_net: true
+          include_stabilizer_nets: true
+          LEFTSTAB: LED_3
+          RIGHTSTAB: LED_2
+          CENTERHOLE: GND
         adjust:
           rotate: 180
 
@@ -829,7 +832,7 @@ pcbs:
           reversible: false
           side: B
         adjust:
-          shift: [-8.25,-5.73]
+          shift: [-8.25,-6.73]
           rotate: 90
           resist: true
 
@@ -843,7 +846,7 @@ pcbs:
           reversible: false
           side: F
         adjust:
-          shift: [8.25,-5.73]
+          shift: [8.25,-6.73]
           rotate: 90
           resist: true
           
