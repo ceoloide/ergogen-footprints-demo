@@ -2,7 +2,8 @@
 
 These full-board images use the footprint fixes from
 [ergogen-footprints PR #85](https://github.com/ceoloide/ergogen-footprints/pull/85).
-The footprint submodule is pinned to that implementation.
+The footprint submodule includes that implementation plus the separate
+[MX net correction in PR #86](https://github.com/ceoloide/ergogen-footprints/pull/86).
 
 The first two MCU examples on each board are reversible, demonstrating rectangular
 and chevron jumpers. `choc_demo` uses nice!nano and `mx_demo` uses SuperMini. The
