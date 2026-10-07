@@ -129,6 +129,7 @@ pcbs:
           from: "{{col.name}}"
           to: "{{colrow}}"
           reversible: true
+          hotswap_pads_same_side: true
           hotswap: true
           solder: false
           include_stabilizer_pad: true
@@ -387,7 +388,7 @@ pcbs:
         where: /switch_c2_r1/
         params:
           use_rectangular_jumpers: true
-          reversible: false
+          reversible: true
           side: F
           reverse_mount: true
         adjust:
@@ -409,7 +410,7 @@ pcbs:
         where: /switch_c2_r1/
         params:
           use_rectangular_jumpers: false
-          reversible: false
+          reversible: true
           side: F
         adjust:
             shift: [2u,-33/2+u/2]
@@ -681,6 +682,18 @@ pcbs:
           include_plate_hole_marking: false
           include_silkscreen: false
           encoder_pads_position: 8.554
+
+      battery_connector_2:
+        what: ceoloide/battery_connector_jst_ph_2
+        where: /board_center/
+        params:
+          reversible: true
+          include_traces: true
+          use_rectangular_jumpers: true
+        adjust:
+          shift: [u + 1.5,-17]
+          rotate: -90
+
   mx_demo:
     template: kicad8
     # references: true
@@ -929,7 +942,7 @@ pcbs:
         where: /switch_c2_r1/
         params:
           use_rectangular_jumpers: true
-          reversible: false
+          reversible: true
           side: F
           reverse_mount: true
         adjust:
@@ -951,7 +964,7 @@ pcbs:
         where: /switch_c2_r1/
         params:
           use_rectangular_jumpers: false
-          reversible: false
+          reversible: true
           side: F
         adjust:
             shift: [2u,-33/2+u/2]
