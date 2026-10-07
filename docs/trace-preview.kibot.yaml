@@ -1,0 +1,18 @@
+kibot:
+  version: 1
+outputs:
+  - name: top_view
+    type: pcbdraw
+    dir: docs/images/pad-center-traces
+    options:
+      format: png
+      dpi: 900
+      style: oshpark-afterdark
+      margin: 2
+      show_solderpaste: false
+  - name: bottom_view
+    type: pcbdraw
+    dir: docs/images/pad-center-traces
+    extends: top_view
+    options:
+      bottom: true
