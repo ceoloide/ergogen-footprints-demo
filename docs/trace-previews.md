@@ -49,7 +49,7 @@ for board in choc_demo mx_demo; do
 done
 ```
 
-The included copper SVGs were exported with KiCad CLI 8.0.9, then rasterized with
+The copper SVGs were exported with KiCad CLI 8.0.9, then rasterized with
 `rsvg-convert --background-color '#ffffff' --width 5000`. The PNGs retain all copper
 geometry, with whitespace trimmed using Pillow's background-difference bounding
 box and a 40-pixel margin. The physical renders use the corney-island KiBot Docker
